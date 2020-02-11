@@ -1,0 +1,2124 @@
+[2020-02-10 17:05:02 -0700] [2862] [DEBUG] Current configuration:
+  config: gunicorn.config.py
+  bind: ['localhost:8000']
+  backlog: 2048
+  workers: 1
+  worker_class: sync
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 300
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: True
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/puttputt/projects/falcon
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1000
+  group: 1000
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: gunicorn.log
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: gunicorn.error.log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: api.app
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7fa4dde92b70>
+  on_reload: <function OnReload.on_reload at 0x7fa4dde92c80>
+  when_ready: <function WhenReady.when_ready at 0x7fa4dde92d90>
+  pre_fork: <function Prefork.pre_fork at 0x7fa4dde92ea0>
+  post_fork: <function Postfork.post_fork at 0x7fa4dd98a048>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7fa4dd98a158>
+  worker_int: <function WorkerInt.worker_int at 0x7fa4dd98a268>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7fa4dd98a378>
+  pre_exec: <function PreExec.pre_exec at 0x7fa4dd98a488>
+  pre_request: <function PreRequest.pre_request at 0x7fa4dd98a598>
+  post_request: <function PostRequest.post_request at 0x7fa4dd98a620>
+  child_exit: <function ChildExit.child_exit at 0x7fa4dd98a730>
+  worker_exit: <function WorkerExit.worker_exit at 0x7fa4dd98a840>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7fa4dd98a950>
+  on_exit: <function OnExit.on_exit at 0x7fa4dd98aa60>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2020-02-10 17:05:02 -0700] [2862] [INFO] Starting gunicorn 20.0.4
+[2020-02-10 17:05:02 -0700] [2862] [DEBUG] Arbiter booted
+[2020-02-10 17:05:02 -0700] [2862] [INFO] Listening at: http://127.0.0.1:8000 (2862)
+[2020-02-10 17:05:02 -0700] [2862] [INFO] Using worker: sync
+[2020-02-10 17:05:02 -0700] [2866] [INFO] Booting worker with pid: 2866
+[2020-02-10 17:05:02 -0700] [2862] [DEBUG] 1 workers
+[2020-02-10 17:05:25 -0700] [2862] [INFO] Handling signal: int
+[2020-02-10 17:05:25 -0700] [2866] [INFO] Worker exiting (pid: 2866)
+[2020-02-10 17:05:25 -0700] [2862] [INFO] Shutting down: Master
+[2020-02-10 17:05:40 -0700] [2884] [DEBUG] Current configuration:
+  config: gunicorn.config.py
+  bind: ['localhost:8000']
+  backlog: 2048
+  workers: 1
+  worker_class: sync
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 300
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: True
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/puttputt/projects/falcon
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1000
+  group: 1000
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: gunicorn.log
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: gunicorn.error.log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: api.app
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7fac4f746b70>
+  on_reload: <function OnReload.on_reload at 0x7fac4f746c80>
+  when_ready: <function WhenReady.when_ready at 0x7fac4f746d90>
+  pre_fork: <function Prefork.pre_fork at 0x7fac4f746ea0>
+  post_fork: <function Postfork.post_fork at 0x7fac4f23e048>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7fac4f23e158>
+  worker_int: <function WorkerInt.worker_int at 0x7fac4f23e268>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7fac4f23e378>
+  pre_exec: <function PreExec.pre_exec at 0x7fac4f23e488>
+  pre_request: <function PreRequest.pre_request at 0x7fac4f23e598>
+  post_request: <function PostRequest.post_request at 0x7fac4f23e620>
+  child_exit: <function ChildExit.child_exit at 0x7fac4f23e730>
+  worker_exit: <function WorkerExit.worker_exit at 0x7fac4f23e840>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7fac4f23e950>
+  on_exit: <function OnExit.on_exit at 0x7fac4f23ea60>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2020-02-10 17:05:40 -0700] [2884] [INFO] Starting gunicorn 20.0.4
+[2020-02-10 17:05:40 -0700] [2884] [DEBUG] Arbiter booted
+[2020-02-10 17:05:40 -0700] [2884] [INFO] Listening at: http://127.0.0.1:8000 (2884)
+[2020-02-10 17:05:40 -0700] [2884] [INFO] Using worker: sync
+[2020-02-10 17:05:40 -0700] [2887] [INFO] Booting worker with pid: 2887
+[2020-02-10 17:05:41 -0700] [2884] [DEBUG] 1 workers
+[2020-02-10 17:05:48 -0700] [2884] [INFO] Handling signal: int
+[2020-02-10 17:05:48 -0700] [2887] [INFO] Worker exiting (pid: 2887)
+[2020-02-10 17:05:48 -0700] [2884] [INFO] Shutting down: Master
+[2020-02-10 17:06:46 -0700] [2917] [DEBUG] Current configuration:
+  config: gunicorn.config.py
+  bind: ['localhost:8000']
+  backlog: 2048
+  workers: 1
+  worker_class: sync
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 300
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: True
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/puttputt/projects/falcon
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1000
+  group: 1000
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: gunicorn.log
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: gunicorn.error.log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: api.app
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7f264b74ab70>
+  on_reload: <function OnReload.on_reload at 0x7f264b74ac80>
+  when_ready: <function WhenReady.when_ready at 0x7f264b74ad90>
+  pre_fork: <function Prefork.pre_fork at 0x7f264b74aea0>
+  post_fork: <function Postfork.post_fork at 0x7f264b242048>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7f264b242158>
+  worker_int: <function WorkerInt.worker_int at 0x7f264b242268>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7f264b242378>
+  pre_exec: <function PreExec.pre_exec at 0x7f264b242488>
+  pre_request: <function PreRequest.pre_request at 0x7f264b242598>
+  post_request: <function PostRequest.post_request at 0x7f264b242620>
+  child_exit: <function ChildExit.child_exit at 0x7f264b242730>
+  worker_exit: <function WorkerExit.worker_exit at 0x7f264b242840>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7f264b242950>
+  on_exit: <function OnExit.on_exit at 0x7f264b242a60>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2020-02-10 17:06:46 -0700] [2917] [INFO] Starting gunicorn 20.0.4
+[2020-02-10 17:06:46 -0700] [2917] [DEBUG] Arbiter booted
+[2020-02-10 17:06:46 -0700] [2917] [INFO] Listening at: http://127.0.0.1:8000 (2917)
+[2020-02-10 17:06:46 -0700] [2917] [INFO] Using worker: sync
+[2020-02-10 17:06:46 -0700] [2920] [INFO] Booting worker with pid: 2920
+[2020-02-10 17:06:46 -0700] [2917] [DEBUG] 1 workers
+[2020-02-10 17:06:48 -0700] [2917] [INFO] Handling signal: int
+[2020-02-10 17:06:48 -0700] [2920] [INFO] Worker exiting (pid: 2920)
+[2020-02-10 17:06:49 -0700] [2917] [INFO] Shutting down: Master
+[2020-02-10 17:07:00 -0700] [2930] [DEBUG] Current configuration:
+  config: gunicorn.config.py
+  bind: ['localhost:8000']
+  backlog: 2048
+  workers: 1
+  worker_class: sync
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 300
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: True
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/puttputt/projects/falcon
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1000
+  group: 1000
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: gunicorn.log
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: gunicorn.error.log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: api.app
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7fe7aaec6b70>
+  on_reload: <function OnReload.on_reload at 0x7fe7aaec6c80>
+  when_ready: <function WhenReady.when_ready at 0x7fe7aaec6d90>
+  pre_fork: <function Prefork.pre_fork at 0x7fe7aaec6ea0>
+  post_fork: <function Postfork.post_fork at 0x7fe7aa9be048>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7fe7aa9be158>
+  worker_int: <function WorkerInt.worker_int at 0x7fe7aa9be268>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7fe7aa9be378>
+  pre_exec: <function PreExec.pre_exec at 0x7fe7aa9be488>
+  pre_request: <function PreRequest.pre_request at 0x7fe7aa9be598>
+  post_request: <function PostRequest.post_request at 0x7fe7aa9be620>
+  child_exit: <function ChildExit.child_exit at 0x7fe7aa9be730>
+  worker_exit: <function WorkerExit.worker_exit at 0x7fe7aa9be840>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7fe7aa9be950>
+  on_exit: <function OnExit.on_exit at 0x7fe7aa9bea60>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2020-02-10 17:07:00 -0700] [2930] [INFO] Starting gunicorn 20.0.4
+[2020-02-10 17:07:00 -0700] [2930] [DEBUG] Arbiter booted
+[2020-02-10 17:07:00 -0700] [2930] [INFO] Listening at: http://127.0.0.1:8000 (2930)
+[2020-02-10 17:07:00 -0700] [2930] [INFO] Using worker: sync
+[2020-02-10 17:07:00 -0700] [2933] [INFO] Booting worker with pid: 2933
+[2020-02-10 17:07:00 -0700] [2930] [DEBUG] 1 workers
+[2020-02-10 17:07:10 -0700] [2933] [DEBUG] GET /list_actions
+[2020-02-10 17:07:14 -0700] [2933] [DEBUG] worker: SIGWINCH ignored.
+[2020-02-10 17:07:14 -0700] [2930] [INFO] Handling signal: winch
+[2020-02-10 17:07:14 -0700] [2930] [DEBUG] SIGWINCH ignored. Not daemonized
+[2020-02-10 17:07:14 -0700] [2933] [DEBUG] worker: SIGWINCH ignored.
+[2020-02-10 17:07:14 -0700] [2930] [INFO] Handling signal: winch
+[2020-02-10 17:07:14 -0700] [2930] [DEBUG] SIGWINCH ignored. Not daemonized
+[2020-02-10 17:07:14 -0700] [2933] [DEBUG] worker: SIGWINCH ignored.
+[2020-02-10 17:07:14 -0700] [2930] [INFO] Handling signal: winch
+[2020-02-10 17:07:14 -0700] [2930] [DEBUG] SIGWINCH ignored. Not daemonized
+[2020-02-10 17:07:14 -0700] [2933] [DEBUG] worker: SIGWINCH ignored.
+[2020-02-10 17:07:14 -0700] [2930] [INFO] Handling signal: winch
+[2020-02-10 17:07:14 -0700] [2930] [DEBUG] SIGWINCH ignored. Not daemonized
+[2020-02-10 17:07:14 -0700] [2933] [DEBUG] worker: SIGWINCH ignored.
+[2020-02-10 17:07:14 -0700] [2930] [INFO] Handling signal: winch
+[2020-02-10 17:07:14 -0700] [2930] [DEBUG] SIGWINCH ignored. Not daemonized
+[2020-02-10 17:07:14 -0700] [2933] [DEBUG] worker: SIGWINCH ignored.
+[2020-02-10 17:07:14 -0700] [2930] [INFO] Handling signal: winch
+[2020-02-10 17:07:14 -0700] [2930] [DEBUG] SIGWINCH ignored. Not daemonized
+[2020-02-10 17:07:14 -0700] [2930] [INFO] Handling signal: winch
+[2020-02-10 17:07:14 -0700] [2930] [DEBUG] SIGWINCH ignored. Not daemonized
+[2020-02-10 17:07:14 -0700] [2933] [DEBUG] worker: SIGWINCH ignored.
+[2020-02-10 17:07:14 -0700] [2933] [DEBUG] worker: SIGWINCH ignored.
+[2020-02-10 17:07:14 -0700] [2930] [INFO] Handling signal: winch
+[2020-02-10 17:07:14 -0700] [2930] [DEBUG] SIGWINCH ignored. Not daemonized
+[2020-02-10 17:07:14 -0700] [2933] [DEBUG] worker: SIGWINCH ignored.
+[2020-02-10 17:07:14 -0700] [2930] [INFO] Handling signal: winch
+[2020-02-10 17:07:14 -0700] [2930] [DEBUG] SIGWINCH ignored. Not daemonized
+[2020-02-10 17:07:14 -0700] [2933] [DEBUG] worker: SIGWINCH ignored.
+[2020-02-10 17:07:14 -0700] [2930] [INFO] Handling signal: winch
+[2020-02-10 17:07:14 -0700] [2930] [DEBUG] SIGWINCH ignored. Not daemonized
+[2020-02-10 17:07:14 -0700] [2933] [DEBUG] worker: SIGWINCH ignored.
+[2020-02-10 17:07:14 -0700] [2930] [INFO] Handling signal: winch
+[2020-02-10 17:07:14 -0700] [2930] [DEBUG] SIGWINCH ignored. Not daemonized
+[2020-02-10 17:07:14 -0700] [2933] [DEBUG] worker: SIGWINCH ignored.
+[2020-02-10 17:07:14 -0700] [2930] [INFO] Handling signal: winch
+[2020-02-10 17:07:14 -0700] [2930] [DEBUG] SIGWINCH ignored. Not daemonized
+[2020-02-10 17:07:14 -0700] [2933] [DEBUG] worker: SIGWINCH ignored.
+[2020-02-10 17:07:14 -0700] [2930] [INFO] Handling signal: winch
+[2020-02-10 17:07:14 -0700] [2930] [DEBUG] SIGWINCH ignored. Not daemonized
+[2020-02-10 17:07:14 -0700] [2933] [DEBUG] worker: SIGWINCH ignored.
+[2020-02-10 17:07:14 -0700] [2930] [INFO] Handling signal: winch
+[2020-02-10 17:07:14 -0700] [2930] [DEBUG] SIGWINCH ignored. Not daemonized
+[2020-02-10 17:07:14 -0700] [2933] [DEBUG] worker: SIGWINCH ignored.
+[2020-02-10 17:07:14 -0700] [2930] [INFO] Handling signal: winch
+[2020-02-10 17:07:14 -0700] [2930] [DEBUG] SIGWINCH ignored. Not daemonized
+[2020-02-10 17:07:14 -0700] [2933] [DEBUG] worker: SIGWINCH ignored.
+[2020-02-10 17:07:14 -0700] [2930] [INFO] Handling signal: winch
+[2020-02-10 17:07:14 -0700] [2930] [DEBUG] SIGWINCH ignored. Not daemonized
+[2020-02-10 17:07:14 -0700] [2933] [DEBUG] worker: SIGWINCH ignored.
+[2020-02-10 17:07:14 -0700] [2930] [INFO] Handling signal: winch
+[2020-02-10 17:07:14 -0700] [2930] [DEBUG] SIGWINCH ignored. Not daemonized
+[2020-02-10 17:07:15 -0700] [2933] [DEBUG] worker: SIGWINCH ignored.
+[2020-02-10 17:07:15 -0700] [2930] [INFO] Handling signal: winch
+[2020-02-10 17:07:15 -0700] [2930] [DEBUG] SIGWINCH ignored. Not daemonized
+[2020-02-10 17:07:18 -0700] [2933] [DEBUG] worker: SIGWINCH ignored.
+[2020-02-10 17:07:18 -0700] [2930] [INFO] Handling signal: winch
+[2020-02-10 17:07:18 -0700] [2930] [DEBUG] SIGWINCH ignored. Not daemonized
+[2020-02-10 17:07:18 -0700] [2933] [DEBUG] worker: SIGWINCH ignored.
+[2020-02-10 17:07:18 -0700] [2930] [INFO] Handling signal: winch
+[2020-02-10 17:07:18 -0700] [2930] [DEBUG] SIGWINCH ignored. Not daemonized
+[2020-02-10 17:07:18 -0700] [2933] [DEBUG] worker: SIGWINCH ignored.
+[2020-02-10 17:07:18 -0700] [2930] [INFO] Handling signal: winch
+[2020-02-10 17:07:18 -0700] [2930] [DEBUG] SIGWINCH ignored. Not daemonized
+[2020-02-10 17:07:18 -0700] [2933] [DEBUG] worker: SIGWINCH ignored.
+[2020-02-10 17:07:18 -0700] [2930] [INFO] Handling signal: winch
+[2020-02-10 17:07:18 -0700] [2930] [DEBUG] SIGWINCH ignored. Not daemonized
+[2020-02-10 17:07:18 -0700] [2933] [DEBUG] worker: SIGWINCH ignored.
+[2020-02-10 17:07:18 -0700] [2930] [INFO] Handling signal: winch
+[2020-02-10 17:07:18 -0700] [2930] [DEBUG] SIGWINCH ignored. Not daemonized
+[2020-02-10 17:07:18 -0700] [2933] [DEBUG] worker: SIGWINCH ignored.
+[2020-02-10 17:07:18 -0700] [2930] [INFO] Handling signal: winch
+[2020-02-10 17:07:18 -0700] [2930] [DEBUG] SIGWINCH ignored. Not daemonized
+[2020-02-10 17:07:18 -0700] [2933] [DEBUG] worker: SIGWINCH ignored.
+[2020-02-10 17:07:18 -0700] [2930] [INFO] Handling signal: winch
+[2020-02-10 17:07:18 -0700] [2930] [DEBUG] SIGWINCH ignored. Not daemonized
+[2020-02-10 17:07:18 -0700] [2933] [DEBUG] worker: SIGWINCH ignored.
+[2020-02-10 17:07:18 -0700] [2930] [INFO] Handling signal: winch
+[2020-02-10 17:07:18 -0700] [2930] [DEBUG] SIGWINCH ignored. Not daemonized
+[2020-02-10 17:07:18 -0700] [2933] [DEBUG] worker: SIGWINCH ignored.
+[2020-02-10 17:07:18 -0700] [2930] [INFO] Handling signal: winch
+[2020-02-10 17:07:18 -0700] [2930] [DEBUG] SIGWINCH ignored. Not daemonized
+[2020-02-10 17:07:18 -0700] [2933] [DEBUG] worker: SIGWINCH ignored.
+[2020-02-10 17:07:18 -0700] [2930] [INFO] Handling signal: winch
+[2020-02-10 17:07:18 -0700] [2930] [DEBUG] SIGWINCH ignored. Not daemonized
+[2020-02-10 17:07:18 -0700] [2933] [DEBUG] worker: SIGWINCH ignored.
+[2020-02-10 17:07:18 -0700] [2930] [INFO] Handling signal: winch
+[2020-02-10 17:07:18 -0700] [2930] [DEBUG] SIGWINCH ignored. Not daemonized
+[2020-02-10 17:07:18 -0700] [2933] [DEBUG] worker: SIGWINCH ignored.
+[2020-02-10 17:07:18 -0700] [2930] [INFO] Handling signal: winch
+[2020-02-10 17:07:18 -0700] [2930] [DEBUG] SIGWINCH ignored. Not daemonized
+[2020-02-10 17:07:18 -0700] [2933] [DEBUG] worker: SIGWINCH ignored.
+[2020-02-10 17:07:18 -0700] [2930] [INFO] Handling signal: winch
+[2020-02-10 17:07:18 -0700] [2930] [DEBUG] SIGWINCH ignored. Not daemonized
+[2020-02-10 17:07:18 -0700] [2933] [DEBUG] worker: SIGWINCH ignored.
+[2020-02-10 17:07:18 -0700] [2930] [INFO] Handling signal: winch
+[2020-02-10 17:07:18 -0700] [2930] [DEBUG] SIGWINCH ignored. Not daemonized
+[2020-02-10 17:08:36 -0700] [2933] [DEBUG] OPTIONS /save_action
+[2020-02-10 17:08:36 -0700] [2933] [DEBUG] POST /save_action
+[2020-02-10 17:08:42 -0700] [2933] [DEBUG] GET /list_actions
+[2020-02-10 17:10:59 -0700] [2933] [DEBUG] POST /save_action
+[2020-02-10 17:11:12 -0700] [2933] [DEBUG] POST /save_action
+[2020-02-10 17:11:13 -0700] [2933] [DEBUG] POST /save_action
+[2020-02-10 17:11:30 -0700] [2933] [DEBUG] POST /save_action
+[2020-02-10 17:11:43 -0700] [2933] [DEBUG] POST /save_action
+[2020-02-10 17:11:43 -0700] [2933] [DEBUG] POST /save_action
+[2020-02-10 17:11:44 -0700] [2933] [DEBUG] POST /save_action
+[2020-02-10 17:11:45 -0700] [2933] [DEBUG] POST /save_action
+[2020-02-10 17:23:23 -0700] [2933] [INFO] Worker reloading: /home/puttputt/projects/falcon/helpers/db_helper.py modified
+[2020-02-10 17:23:23 -0700] [2933] [INFO] Worker exiting (pid: 2933)
+[2020-02-10 17:23:23 -0700] [3961] [INFO] Booting worker with pid: 3961
+[2020-02-10 17:23:35 -0700] [3961] [INFO] Worker reloading: /home/puttputt/projects/falcon/api/app.py modified
+[2020-02-10 17:23:35 -0700] [3961] [INFO] Worker exiting (pid: 3961)
+[2020-02-10 17:23:35 -0700] [3973] [INFO] Booting worker with pid: 3973
+[2020-02-10 17:24:03 -0700] [3973] [INFO] Worker reloading: /home/puttputt/projects/falcon/api/app.py modified
+[2020-02-10 17:24:03 -0700] [3973] [INFO] Worker exiting (pid: 3973)
+[2020-02-10 17:24:03 -0700] [3982] [INFO] Booting worker with pid: 3982
+[2020-02-10 17:24:03 -0700] [3982] [ERROR] invalid syntax (app.py, line 5)
+Traceback (most recent call last):
+  File "/home/puttputt/.local/lib/python3.6/site-packages/gunicorn/workers/base.py", line 144, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/puttputt/.local/lib/python3.6/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/puttputt/.local/lib/python3.6/site-packages/gunicorn/app/wsgiapp.py", line 49, in load
+    return self.load_wsgiapp()
+  File "/home/puttputt/.local/lib/python3.6/site-packages/gunicorn/app/wsgiapp.py", line 39, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/puttputt/.local/lib/python3.6/site-packages/gunicorn/util.py", line 358, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 674, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 781, in get_code
+  File "<frozen importlib._bootstrap_external>", line 741, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/puttputt/projects/falcon/api/app.py", line 5
+    function create_timestamp() {
+                            ^
+SyntaxError: invalid syntax
+[2020-02-10 17:24:03 -0700] [3982] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/puttputt/.local/lib/python3.6/site-packages/gunicorn/workers/base.py", line 144, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/puttputt/.local/lib/python3.6/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/puttputt/.local/lib/python3.6/site-packages/gunicorn/app/wsgiapp.py", line 49, in load
+    return self.load_wsgiapp()
+  File "/home/puttputt/.local/lib/python3.6/site-packages/gunicorn/app/wsgiapp.py", line 39, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/puttputt/.local/lib/python3.6/site-packages/gunicorn/util.py", line 358, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 674, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 781, in get_code
+  File "<frozen importlib._bootstrap_external>", line 741, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/puttputt/projects/falcon/api/app.py", line 5
+    function create_timestamp() {
+                            ^
+SyntaxError: invalid syntax
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/puttputt/.local/lib/python3.6/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/home/puttputt/.local/lib/python3.6/site-packages/gunicorn/workers/base.py", line 119, in init_process
+    self.load_wsgi()
+  File "/home/puttputt/.local/lib/python3.6/site-packages/gunicorn/workers/base.py", line 157, in load_wsgi
+    self.reloader.add_extra_file(exc_val.filename)
+AttributeError: 'NoneType' object has no attribute 'add_extra_file'
+[2020-02-10 17:24:03 -0700] [3982] [INFO] Worker exiting (pid: 3982)
+[2020-02-10 17:24:03 -0700] [2930] [INFO] Shutting down: Master
+[2020-02-10 17:24:03 -0700] [2930] [INFO] Reason: Worker failed to boot.
+[2020-02-10 17:24:14 -0700] [3987] [DEBUG] Current configuration:
+  config: gunicorn.config.py
+  bind: ['localhost:8000']
+  backlog: 2048
+  workers: 1
+  worker_class: sync
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 300
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: True
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/puttputt/projects/falcon
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1000
+  group: 1000
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: gunicorn.log
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: gunicorn.error.log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: api.app
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7f44488feb70>
+  on_reload: <function OnReload.on_reload at 0x7f44488fec80>
+  when_ready: <function WhenReady.when_ready at 0x7f44488fed90>
+  pre_fork: <function Prefork.pre_fork at 0x7f44488feea0>
+  post_fork: <function Postfork.post_fork at 0x7f44483f6048>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7f44483f6158>
+  worker_int: <function WorkerInt.worker_int at 0x7f44483f6268>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7f44483f6378>
+  pre_exec: <function PreExec.pre_exec at 0x7f44483f6488>
+  pre_request: <function PreRequest.pre_request at 0x7f44483f6598>
+  post_request: <function PostRequest.post_request at 0x7f44483f6620>
+  child_exit: <function ChildExit.child_exit at 0x7f44483f6730>
+  worker_exit: <function WorkerExit.worker_exit at 0x7f44483f6840>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7f44483f6950>
+  on_exit: <function OnExit.on_exit at 0x7f44483f6a60>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2020-02-10 17:24:14 -0700] [3987] [INFO] Starting gunicorn 20.0.4
+[2020-02-10 17:24:14 -0700] [3987] [DEBUG] Arbiter booted
+[2020-02-10 17:24:14 -0700] [3987] [INFO] Listening at: http://127.0.0.1:8000 (3987)
+[2020-02-10 17:24:14 -0700] [3987] [INFO] Using worker: sync
+[2020-02-10 17:24:14 -0700] [3990] [INFO] Booting worker with pid: 3990
+[2020-02-10 17:24:14 -0700] [3990] [ERROR] invalid syntax (app.py, line 5)
+Traceback (most recent call last):
+  File "/home/puttputt/.local/lib/python3.6/site-packages/gunicorn/workers/base.py", line 144, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/puttputt/.local/lib/python3.6/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/puttputt/.local/lib/python3.6/site-packages/gunicorn/app/wsgiapp.py", line 49, in load
+    return self.load_wsgiapp()
+  File "/home/puttputt/.local/lib/python3.6/site-packages/gunicorn/app/wsgiapp.py", line 39, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/puttputt/.local/lib/python3.6/site-packages/gunicorn/util.py", line 358, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 674, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 781, in get_code
+  File "<frozen importlib._bootstrap_external>", line 741, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/puttputt/projects/falcon/api/app.py", line 5
+    function create_timestamp() {
+                            ^
+SyntaxError: invalid syntax
+[2020-02-10 17:24:14 -0700] [3990] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/puttputt/.local/lib/python3.6/site-packages/gunicorn/workers/base.py", line 144, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/puttputt/.local/lib/python3.6/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/puttputt/.local/lib/python3.6/site-packages/gunicorn/app/wsgiapp.py", line 49, in load
+    return self.load_wsgiapp()
+  File "/home/puttputt/.local/lib/python3.6/site-packages/gunicorn/app/wsgiapp.py", line 39, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/puttputt/.local/lib/python3.6/site-packages/gunicorn/util.py", line 358, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 674, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 781, in get_code
+  File "<frozen importlib._bootstrap_external>", line 741, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/puttputt/projects/falcon/api/app.py", line 5
+    function create_timestamp() {
+                            ^
+SyntaxError: invalid syntax
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/puttputt/.local/lib/python3.6/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/home/puttputt/.local/lib/python3.6/site-packages/gunicorn/workers/base.py", line 119, in init_process
+    self.load_wsgi()
+  File "/home/puttputt/.local/lib/python3.6/site-packages/gunicorn/workers/base.py", line 157, in load_wsgi
+    self.reloader.add_extra_file(exc_val.filename)
+AttributeError: 'NoneType' object has no attribute 'add_extra_file'
+[2020-02-10 17:24:14 -0700] [3990] [INFO] Worker exiting (pid: 3990)
+[2020-02-10 17:24:14 -0700] [3987] [INFO] Shutting down: Master
+[2020-02-10 17:24:14 -0700] [3987] [INFO] Reason: Worker failed to boot.
+[2020-02-10 17:24:28 -0700] [4005] [DEBUG] Current configuration:
+  config: gunicorn.config.py
+  bind: ['localhost:8000']
+  backlog: 2048
+  workers: 1
+  worker_class: sync
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 300
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: True
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/puttputt/projects/falcon
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1000
+  group: 1000
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: gunicorn.log
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: gunicorn.error.log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: api.app
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7f2fce94ab70>
+  on_reload: <function OnReload.on_reload at 0x7f2fce94ac80>
+  when_ready: <function WhenReady.when_ready at 0x7f2fce94ad90>
+  pre_fork: <function Prefork.pre_fork at 0x7f2fce94aea0>
+  post_fork: <function Postfork.post_fork at 0x7f2fce442048>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7f2fce442158>
+  worker_int: <function WorkerInt.worker_int at 0x7f2fce442268>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7f2fce442378>
+  pre_exec: <function PreExec.pre_exec at 0x7f2fce442488>
+  pre_request: <function PreRequest.pre_request at 0x7f2fce442598>
+  post_request: <function PostRequest.post_request at 0x7f2fce442620>
+  child_exit: <function ChildExit.child_exit at 0x7f2fce442730>
+  worker_exit: <function WorkerExit.worker_exit at 0x7f2fce442840>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7f2fce442950>
+  on_exit: <function OnExit.on_exit at 0x7f2fce442a60>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2020-02-10 17:24:28 -0700] [4005] [INFO] Starting gunicorn 20.0.4
+[2020-02-10 17:24:28 -0700] [4005] [DEBUG] Arbiter booted
+[2020-02-10 17:24:28 -0700] [4005] [INFO] Listening at: http://127.0.0.1:8000 (4005)
+[2020-02-10 17:24:28 -0700] [4005] [INFO] Using worker: sync
+[2020-02-10 17:24:28 -0700] [4008] [INFO] Booting worker with pid: 4008
+[2020-02-10 17:24:28 -0700] [4008] [ERROR] invalid syntax (app.py, line 5)
+Traceback (most recent call last):
+  File "/home/puttputt/.local/lib/python3.6/site-packages/gunicorn/workers/base.py", line 144, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/puttputt/.local/lib/python3.6/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/puttputt/.local/lib/python3.6/site-packages/gunicorn/app/wsgiapp.py", line 49, in load
+    return self.load_wsgiapp()
+  File "/home/puttputt/.local/lib/python3.6/site-packages/gunicorn/app/wsgiapp.py", line 39, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/puttputt/.local/lib/python3.6/site-packages/gunicorn/util.py", line 358, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 674, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 781, in get_code
+  File "<frozen importlib._bootstrap_external>", line 741, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/puttputt/projects/falcon/api/app.py", line 5
+    function create_timestamp() {
+                            ^
+SyntaxError: invalid syntax
+[2020-02-10 17:24:28 -0700] [4008] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/puttputt/.local/lib/python3.6/site-packages/gunicorn/workers/base.py", line 144, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/puttputt/.local/lib/python3.6/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/puttputt/.local/lib/python3.6/site-packages/gunicorn/app/wsgiapp.py", line 49, in load
+    return self.load_wsgiapp()
+  File "/home/puttputt/.local/lib/python3.6/site-packages/gunicorn/app/wsgiapp.py", line 39, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/puttputt/.local/lib/python3.6/site-packages/gunicorn/util.py", line 358, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 674, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 781, in get_code
+  File "<frozen importlib._bootstrap_external>", line 741, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/puttputt/projects/falcon/api/app.py", line 5
+    function create_timestamp() {
+                            ^
+SyntaxError: invalid syntax
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/puttputt/.local/lib/python3.6/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/home/puttputt/.local/lib/python3.6/site-packages/gunicorn/workers/base.py", line 119, in init_process
+    self.load_wsgi()
+  File "/home/puttputt/.local/lib/python3.6/site-packages/gunicorn/workers/base.py", line 157, in load_wsgi
+    self.reloader.add_extra_file(exc_val.filename)
+AttributeError: 'NoneType' object has no attribute 'add_extra_file'
+[2020-02-10 17:24:28 -0700] [4008] [INFO] Worker exiting (pid: 4008)
+[2020-02-10 17:24:28 -0700] [4005] [INFO] Shutting down: Master
+[2020-02-10 17:24:28 -0700] [4005] [INFO] Reason: Worker failed to boot.
+[2020-02-10 17:24:53 -0700] [4015] [DEBUG] Current configuration:
+  config: gunicorn.config.py
+  bind: ['localhost:8000']
+  backlog: 2048
+  workers: 1
+  worker_class: sync
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 300
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: True
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/puttputt/projects/falcon
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1000
+  group: 1000
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: gunicorn.log
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: gunicorn.error.log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: api.app
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7fea89188b70>
+  on_reload: <function OnReload.on_reload at 0x7fea89188c80>
+  when_ready: <function WhenReady.when_ready at 0x7fea89188d90>
+  pre_fork: <function Prefork.pre_fork at 0x7fea89188ea0>
+  post_fork: <function Postfork.post_fork at 0x7fea88c80048>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7fea88c80158>
+  worker_int: <function WorkerInt.worker_int at 0x7fea88c80268>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7fea88c80378>
+  pre_exec: <function PreExec.pre_exec at 0x7fea88c80488>
+  pre_request: <function PreRequest.pre_request at 0x7fea88c80598>
+  post_request: <function PostRequest.post_request at 0x7fea88c80620>
+  child_exit: <function ChildExit.child_exit at 0x7fea88c80730>
+  worker_exit: <function WorkerExit.worker_exit at 0x7fea88c80840>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7fea88c80950>
+  on_exit: <function OnExit.on_exit at 0x7fea88c80a60>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2020-02-10 17:24:53 -0700] [4015] [INFO] Starting gunicorn 20.0.4
+[2020-02-10 17:24:53 -0700] [4015] [DEBUG] Arbiter booted
+[2020-02-10 17:24:53 -0700] [4015] [INFO] Listening at: http://127.0.0.1:8000 (4015)
+[2020-02-10 17:24:53 -0700] [4015] [INFO] Using worker: sync
+[2020-02-10 17:24:53 -0700] [4018] [INFO] Booting worker with pid: 4018
+[2020-02-10 17:24:53 -0700] [4018] [ERROR] invalid syntax (app.py, line 5)
+Traceback (most recent call last):
+  File "/home/puttputt/.local/lib/python3.6/site-packages/gunicorn/workers/base.py", line 144, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/puttputt/.local/lib/python3.6/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/puttputt/.local/lib/python3.6/site-packages/gunicorn/app/wsgiapp.py", line 49, in load
+    return self.load_wsgiapp()
+  File "/home/puttputt/.local/lib/python3.6/site-packages/gunicorn/app/wsgiapp.py", line 39, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/puttputt/.local/lib/python3.6/site-packages/gunicorn/util.py", line 358, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 674, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 781, in get_code
+  File "<frozen importlib._bootstrap_external>", line 741, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/puttputt/projects/falcon/api/app.py", line 5
+    function create_timestamp() {
+                            ^
+SyntaxError: invalid syntax
+[2020-02-10 17:24:53 -0700] [4018] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/puttputt/.local/lib/python3.6/site-packages/gunicorn/workers/base.py", line 144, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/puttputt/.local/lib/python3.6/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/puttputt/.local/lib/python3.6/site-packages/gunicorn/app/wsgiapp.py", line 49, in load
+    return self.load_wsgiapp()
+  File "/home/puttputt/.local/lib/python3.6/site-packages/gunicorn/app/wsgiapp.py", line 39, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/puttputt/.local/lib/python3.6/site-packages/gunicorn/util.py", line 358, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 674, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 781, in get_code
+  File "<frozen importlib._bootstrap_external>", line 741, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/puttputt/projects/falcon/api/app.py", line 5
+    function create_timestamp() {
+                            ^
+SyntaxError: invalid syntax
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/puttputt/.local/lib/python3.6/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/home/puttputt/.local/lib/python3.6/site-packages/gunicorn/workers/base.py", line 119, in init_process
+    self.load_wsgi()
+  File "/home/puttputt/.local/lib/python3.6/site-packages/gunicorn/workers/base.py", line 157, in load_wsgi
+    self.reloader.add_extra_file(exc_val.filename)
+AttributeError: 'NoneType' object has no attribute 'add_extra_file'
+[2020-02-10 17:24:53 -0700] [4018] [INFO] Worker exiting (pid: 4018)
+[2020-02-10 17:24:53 -0700] [4015] [INFO] Shutting down: Master
+[2020-02-10 17:24:53 -0700] [4015] [INFO] Reason: Worker failed to boot.
+[2020-02-10 17:26:03 -0700] [4036] [DEBUG] Current configuration:
+  config: gunicorn.config.py
+  bind: ['localhost:8000']
+  backlog: 2048
+  workers: 1
+  worker_class: sync
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 300
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: True
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/puttputt/projects/falcon
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1000
+  group: 1000
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: gunicorn.log
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: gunicorn.error.log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: api.app
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7f9aa5625b70>
+  on_reload: <function OnReload.on_reload at 0x7f9aa5625c80>
+  when_ready: <function WhenReady.when_ready at 0x7f9aa5625d90>
+  pre_fork: <function Prefork.pre_fork at 0x7f9aa5625ea0>
+  post_fork: <function Postfork.post_fork at 0x7f9aa511d048>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7f9aa511d158>
+  worker_int: <function WorkerInt.worker_int at 0x7f9aa511d268>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7f9aa511d378>
+  pre_exec: <function PreExec.pre_exec at 0x7f9aa511d488>
+  pre_request: <function PreRequest.pre_request at 0x7f9aa511d598>
+  post_request: <function PostRequest.post_request at 0x7f9aa511d620>
+  child_exit: <function ChildExit.child_exit at 0x7f9aa511d730>
+  worker_exit: <function WorkerExit.worker_exit at 0x7f9aa511d840>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7f9aa511d950>
+  on_exit: <function OnExit.on_exit at 0x7f9aa511da60>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2020-02-10 17:26:03 -0700] [4036] [INFO] Starting gunicorn 20.0.4
+[2020-02-10 17:26:03 -0700] [4036] [DEBUG] Arbiter booted
+[2020-02-10 17:26:03 -0700] [4036] [INFO] Listening at: http://127.0.0.1:8000 (4036)
+[2020-02-10 17:26:03 -0700] [4036] [INFO] Using worker: sync
+[2020-02-10 17:26:03 -0700] [4039] [INFO] Booting worker with pid: 4039
+[2020-02-10 17:26:03 -0700] [4036] [DEBUG] 1 workers
+[2020-02-10 17:26:07 -0700] [4039] [DEBUG] POST /save_action
+[2020-02-10 17:26:07 -0700] [4039] [ERROR] Error handling request /save_action
+Traceback (most recent call last):
+  File "/home/puttputt/.local/lib/python3.6/site-packages/gunicorn/workers/sync.py", line 134, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/home/puttputt/.local/lib/python3.6/site-packages/gunicorn/workers/sync.py", line 175, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "falcon/api.py", line 274, in falcon.api.API.__call__
+  File "falcon/api.py", line 269, in falcon.api.API.__call__
+  File "/home/puttputt/projects/falcon/api/app.py", line 12, in on_post
+    row = db.save_action(action, dog, timestamp)
+NameError: name 'timestamp' is not defined
+[2020-02-10 17:26:11 -0700] [4039] [DEBUG] POST /save_action
+[2020-02-10 17:26:11 -0700] [4039] [ERROR] Error handling request /save_action
+Traceback (most recent call last):
+  File "/home/puttputt/.local/lib/python3.6/site-packages/gunicorn/workers/sync.py", line 134, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/home/puttputt/.local/lib/python3.6/site-packages/gunicorn/workers/sync.py", line 175, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "falcon/api.py", line 274, in falcon.api.API.__call__
+  File "falcon/api.py", line 269, in falcon.api.API.__call__
+  File "/home/puttputt/projects/falcon/api/app.py", line 12, in on_post
+    row = db.save_action(action, dog, timestamp)
+NameError: name 'timestamp' is not defined
+[2020-02-10 17:26:31 -0700] [4039] [INFO] Worker reloading: /home/puttputt/projects/falcon/helpers/db_helper.py modified
+[2020-02-10 17:26:31 -0700] [4039] [INFO] Worker exiting (pid: 4039)
+[2020-02-10 17:26:31 -0700] [4064] [INFO] Booting worker with pid: 4064
+[2020-02-10 17:27:22 -0700] [4064] [DEBUG] POST /save_action
+[2020-02-10 17:27:22 -0700] [4064] [ERROR] Error handling request /save_action
+Traceback (most recent call last):
+  File "/home/puttputt/.local/lib/python3.6/site-packages/gunicorn/workers/sync.py", line 134, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/home/puttputt/.local/lib/python3.6/site-packages/gunicorn/workers/sync.py", line 175, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "falcon/api.py", line 274, in falcon.api.API.__call__
+  File "falcon/api.py", line 269, in falcon.api.API.__call__
+  File "/home/puttputt/projects/falcon/api/app.py", line 12, in on_post
+    row = db.save_action(action, dog, timestamp)
+NameError: name 'timestamp' is not defined
+[2020-02-10 17:27:32 -0700] [4064] [DEBUG] GET /list_actions
+[2020-02-10 17:27:37 -0700] [4064] [DEBUG] OPTIONS /save_action
+[2020-02-10 17:27:37 -0700] [4064] [DEBUG] POST /save_action
+[2020-02-10 17:27:37 -0700] [4064] [ERROR] Error handling request /save_action
+Traceback (most recent call last):
+  File "/home/puttputt/.local/lib/python3.6/site-packages/gunicorn/workers/sync.py", line 134, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/home/puttputt/.local/lib/python3.6/site-packages/gunicorn/workers/sync.py", line 175, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "falcon/api.py", line 274, in falcon.api.API.__call__
+  File "falcon/api.py", line 269, in falcon.api.API.__call__
+  File "/home/puttputt/projects/falcon/api/app.py", line 12, in on_post
+    row = db.save_action(action, dog, timestamp)
+NameError: name 'timestamp' is not defined
+[2020-02-10 17:27:39 -0700] [4064] [DEBUG] GET /list_actions
+[2020-02-10 17:27:59 -0700] [4064] [DEBUG] OPTIONS /save_action
+[2020-02-10 17:27:59 -0700] [4064] [DEBUG] POST /save_action
+[2020-02-10 17:27:59 -0700] [4064] [ERROR] Error handling request /save_action
+Traceback (most recent call last):
+  File "/home/puttputt/.local/lib/python3.6/site-packages/gunicorn/workers/sync.py", line 134, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/home/puttputt/.local/lib/python3.6/site-packages/gunicorn/workers/sync.py", line 175, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "falcon/api.py", line 274, in falcon.api.API.__call__
+  File "falcon/api.py", line 269, in falcon.api.API.__call__
+  File "/home/puttputt/projects/falcon/api/app.py", line 12, in on_post
+    row = db.save_action(action, dog, timestamp)
+NameError: name 'timestamp' is not defined
+[2020-02-10 17:28:54 -0700] [4036] [INFO] Handling signal: int
+[2020-02-10 17:28:54 -0700] [4064] [INFO] Worker exiting (pid: 4064)
+[2020-02-10 17:28:54 -0700] [4036] [INFO] Shutting down: Master
+[2020-02-10 17:28:55 -0700] [4135] [DEBUG] Current configuration:
+  config: gunicorn.config.py
+  bind: ['localhost:8000']
+  backlog: 2048
+  workers: 1
+  worker_class: sync
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 300
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: True
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/puttputt/projects/falcon
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1000
+  group: 1000
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: gunicorn.log
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: gunicorn.error.log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: api.app
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7f267b944b70>
+  on_reload: <function OnReload.on_reload at 0x7f267b944c80>
+  when_ready: <function WhenReady.when_ready at 0x7f267b944d90>
+  pre_fork: <function Prefork.pre_fork at 0x7f267b944ea0>
+  post_fork: <function Postfork.post_fork at 0x7f267b43c048>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7f267b43c158>
+  worker_int: <function WorkerInt.worker_int at 0x7f267b43c268>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7f267b43c378>
+  pre_exec: <function PreExec.pre_exec at 0x7f267b43c488>
+  pre_request: <function PreRequest.pre_request at 0x7f267b43c598>
+  post_request: <function PostRequest.post_request at 0x7f267b43c620>
+  child_exit: <function ChildExit.child_exit at 0x7f267b43c730>
+  worker_exit: <function WorkerExit.worker_exit at 0x7f267b43c840>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7f267b43c950>
+  on_exit: <function OnExit.on_exit at 0x7f267b43ca60>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2020-02-10 17:28:55 -0700] [4135] [INFO] Starting gunicorn 20.0.4
+[2020-02-10 17:28:55 -0700] [4135] [DEBUG] Arbiter booted
+[2020-02-10 17:28:55 -0700] [4135] [INFO] Listening at: http://127.0.0.1:8000 (4135)
+[2020-02-10 17:28:55 -0700] [4135] [INFO] Using worker: sync
+[2020-02-10 17:28:55 -0700] [4138] [INFO] Booting worker with pid: 4138
+[2020-02-10 17:28:55 -0700] [4135] [DEBUG] 1 workers
+[2020-02-10 17:29:02 -0700] [4138] [DEBUG] OPTIONS /save_action
+[2020-02-10 17:29:02 -0700] [4138] [DEBUG] POST /save_action
+[2020-02-10 17:29:02 -0700] [4138] [ERROR] Error handling request /save_action
+Traceback (most recent call last):
+  File "/home/puttputt/.local/lib/python3.6/site-packages/gunicorn/workers/sync.py", line 134, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/home/puttputt/.local/lib/python3.6/site-packages/gunicorn/workers/sync.py", line 175, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "falcon/api.py", line 274, in falcon.api.API.__call__
+  File "falcon/api.py", line 269, in falcon.api.API.__call__
+  File "/home/puttputt/projects/falcon/api/app.py", line 12, in on_post
+    row = db.save_action(action, dog, timestamp)
+NameError: name 'timestamp' is not defined
+[2020-02-10 17:29:32 -0700] [4138] [INFO] Worker reloading: /home/puttputt/projects/falcon/helpers/db_helper.py modified
+[2020-02-10 17:29:32 -0700] [4138] [INFO] Worker exiting (pid: 4138)
+[2020-02-10 17:29:33 -0700] [4155] [INFO] Booting worker with pid: 4155
+[2020-02-10 17:30:10 -0700] [4155] [INFO] Worker reloading: /home/puttputt/projects/falcon/helpers/db_helper.py modified
+[2020-02-10 17:30:10 -0700] [4155] [INFO] Worker exiting (pid: 4155)
+[2020-02-10 17:30:10 -0700] [4170] [INFO] Booting worker with pid: 4170
+[2020-02-10 17:30:56 -0700] [4135] [INFO] Handling signal: winch
+[2020-02-10 17:30:56 -0700] [4135] [DEBUG] SIGWINCH ignored. Not daemonized
+[2020-02-10 17:30:56 -0700] [4170] [DEBUG] worker: SIGWINCH ignored.
+[2020-02-10 17:30:56 -0700] [4170] [DEBUG] worker: SIGWINCH ignored.
+[2020-02-10 17:30:56 -0700] [4135] [INFO] Handling signal: winch
+[2020-02-10 17:30:56 -0700] [4135] [DEBUG] SIGWINCH ignored. Not daemonized
+[2020-02-10 17:30:56 -0700] [4170] [DEBUG] worker: SIGWINCH ignored.
+[2020-02-10 17:30:56 -0700] [4135] [INFO] Handling signal: winch
+[2020-02-10 17:30:56 -0700] [4135] [DEBUG] SIGWINCH ignored. Not daemonized
+[2020-02-10 17:30:56 -0700] [4170] [DEBUG] worker: SIGWINCH ignored.
+[2020-02-10 17:30:56 -0700] [4135] [INFO] Handling signal: winch
+[2020-02-10 17:30:56 -0700] [4135] [DEBUG] SIGWINCH ignored. Not daemonized
+[2020-02-10 17:30:56 -0700] [4170] [DEBUG] worker: SIGWINCH ignored.
+[2020-02-10 17:30:56 -0700] [4135] [INFO] Handling signal: winch
+[2020-02-10 17:30:56 -0700] [4135] [DEBUG] SIGWINCH ignored. Not daemonized
+[2020-02-10 17:30:56 -0700] [4170] [DEBUG] worker: SIGWINCH ignored.
+[2020-02-10 17:30:56 -0700] [4135] [INFO] Handling signal: winch
+[2020-02-10 17:30:56 -0700] [4135] [DEBUG] SIGWINCH ignored. Not daemonized
+[2020-02-10 17:30:56 -0700] [4170] [DEBUG] worker: SIGWINCH ignored.
+[2020-02-10 17:30:56 -0700] [4135] [INFO] Handling signal: winch
+[2020-02-10 17:30:56 -0700] [4135] [DEBUG] SIGWINCH ignored. Not daemonized
+[2020-02-10 17:30:56 -0700] [4170] [DEBUG] worker: SIGWINCH ignored.
+[2020-02-10 17:30:56 -0700] [4135] [INFO] Handling signal: winch
+[2020-02-10 17:30:56 -0700] [4135] [DEBUG] SIGWINCH ignored. Not daemonized
+[2020-02-10 17:30:56 -0700] [4170] [DEBUG] worker: SIGWINCH ignored.
+[2020-02-10 17:30:56 -0700] [4135] [INFO] Handling signal: winch
+[2020-02-10 17:30:56 -0700] [4135] [DEBUG] SIGWINCH ignored. Not daemonized
+[2020-02-10 17:30:56 -0700] [4170] [DEBUG] worker: SIGWINCH ignored.
+[2020-02-10 17:30:56 -0700] [4135] [INFO] Handling signal: winch
+[2020-02-10 17:30:56 -0700] [4135] [DEBUG] SIGWINCH ignored. Not daemonized
+[2020-02-10 17:30:56 -0700] [4170] [DEBUG] worker: SIGWINCH ignored.
+[2020-02-10 17:30:56 -0700] [4135] [INFO] Handling signal: winch
+[2020-02-10 17:30:56 -0700] [4135] [DEBUG] SIGWINCH ignored. Not daemonized
+[2020-02-10 17:30:56 -0700] [4170] [DEBUG] worker: SIGWINCH ignored.
+[2020-02-10 17:30:56 -0700] [4135] [INFO] Handling signal: winch
+[2020-02-10 17:30:56 -0700] [4135] [DEBUG] SIGWINCH ignored. Not daemonized
+[2020-02-10 17:30:56 -0700] [4170] [DEBUG] worker: SIGWINCH ignored.
+[2020-02-10 17:30:56 -0700] [4135] [INFO] Handling signal: winch
+[2020-02-10 17:30:56 -0700] [4135] [DEBUG] SIGWINCH ignored. Not daemonized
+[2020-02-10 17:30:56 -0700] [4135] [INFO] Handling signal: winch
+[2020-02-10 17:30:56 -0700] [4170] [DEBUG] worker: SIGWINCH ignored.
+[2020-02-10 17:30:56 -0700] [4135] [DEBUG] SIGWINCH ignored. Not daemonized
+[2020-02-10 17:30:56 -0700] [4170] [DEBUG] worker: SIGWINCH ignored.
+[2020-02-10 17:30:56 -0700] [4135] [INFO] Handling signal: winch
+[2020-02-10 17:30:56 -0700] [4135] [DEBUG] SIGWINCH ignored. Not daemonized
+[2020-02-10 17:30:56 -0700] [4170] [DEBUG] worker: SIGWINCH ignored.
+[2020-02-10 17:30:56 -0700] [4135] [INFO] Handling signal: winch
+[2020-02-10 17:30:56 -0700] [4135] [DEBUG] SIGWINCH ignored. Not daemonized
+[2020-02-10 17:30:56 -0700] [4135] [INFO] Handling signal: winch
+[2020-02-10 17:30:56 -0700] [4170] [DEBUG] worker: SIGWINCH ignored.
+[2020-02-10 17:30:56 -0700] [4135] [DEBUG] SIGWINCH ignored. Not daemonized
+[2020-02-10 17:30:56 -0700] [4170] [DEBUG] worker: SIGWINCH ignored.
+[2020-02-10 17:30:56 -0700] [4135] [INFO] Handling signal: winch
+[2020-02-10 17:30:56 -0700] [4135] [DEBUG] SIGWINCH ignored. Not daemonized
+[2020-02-10 17:30:56 -0700] [4170] [DEBUG] worker: SIGWINCH ignored.
+[2020-02-10 17:30:56 -0700] [4135] [INFO] Handling signal: winch
+[2020-02-10 17:30:56 -0700] [4135] [DEBUG] SIGWINCH ignored. Not daemonized
+[2020-02-10 17:30:56 -0700] [4170] [DEBUG] worker: SIGWINCH ignored.
+[2020-02-10 17:30:56 -0700] [4135] [INFO] Handling signal: winch
+[2020-02-10 17:30:56 -0700] [4135] [DEBUG] SIGWINCH ignored. Not daemonized
+[2020-02-10 17:30:56 -0700] [4170] [DEBUG] worker: SIGWINCH ignored.
+[2020-02-10 17:30:56 -0700] [4135] [INFO] Handling signal: winch
+[2020-02-10 17:30:56 -0700] [4135] [DEBUG] SIGWINCH ignored. Not daemonized
+[2020-02-10 17:30:56 -0700] [4170] [DEBUG] worker: SIGWINCH ignored.
+[2020-02-10 17:30:56 -0700] [4135] [INFO] Handling signal: winch
+[2020-02-10 17:30:56 -0700] [4135] [DEBUG] SIGWINCH ignored. Not daemonized
+[2020-02-10 17:30:56 -0700] [4170] [DEBUG] worker: SIGWINCH ignored.
+[2020-02-10 17:30:56 -0700] [4135] [INFO] Handling signal: winch
+[2020-02-10 17:30:56 -0700] [4135] [DEBUG] SIGWINCH ignored. Not daemonized
+[2020-02-10 17:30:56 -0700] [4170] [DEBUG] worker: SIGWINCH ignored.
+[2020-02-10 17:30:56 -0700] [4135] [INFO] Handling signal: winch
+[2020-02-10 17:30:56 -0700] [4135] [DEBUG] SIGWINCH ignored. Not daemonized
+[2020-02-10 17:31:01 -0700] [4170] [DEBUG] worker: SIGWINCH ignored.
+[2020-02-10 17:31:01 -0700] [4135] [INFO] Handling signal: winch
+[2020-02-10 17:31:01 -0700] [4135] [DEBUG] SIGWINCH ignored. Not daemonized
+[2020-02-10 17:31:01 -0700] [4170] [DEBUG] worker: SIGWINCH ignored.
+[2020-02-10 17:31:01 -0700] [4135] [INFO] Handling signal: winch
+[2020-02-10 17:31:01 -0700] [4135] [DEBUG] SIGWINCH ignored. Not daemonized
+[2020-02-10 17:31:01 -0700] [4170] [DEBUG] worker: SIGWINCH ignored.
+[2020-02-10 17:31:01 -0700] [4135] [INFO] Handling signal: winch
+[2020-02-10 17:31:01 -0700] [4135] [DEBUG] SIGWINCH ignored. Not daemonized
+[2020-02-10 17:31:01 -0700] [4170] [DEBUG] worker: SIGWINCH ignored.
+[2020-02-10 17:31:01 -0700] [4135] [INFO] Handling signal: winch
+[2020-02-10 17:31:01 -0700] [4135] [DEBUG] SIGWINCH ignored. Not daemonized
+[2020-02-10 17:31:01 -0700] [4170] [DEBUG] worker: SIGWINCH ignored.
+[2020-02-10 17:31:01 -0700] [4135] [INFO] Handling signal: winch
+[2020-02-10 17:31:01 -0700] [4135] [DEBUG] SIGWINCH ignored. Not daemonized
+[2020-02-10 17:31:01 -0700] [4170] [DEBUG] worker: SIGWINCH ignored.
+[2020-02-10 17:31:01 -0700] [4135] [INFO] Handling signal: winch
+[2020-02-10 17:31:01 -0700] [4135] [DEBUG] SIGWINCH ignored. Not daemonized
+[2020-02-10 17:31:01 -0700] [4170] [DEBUG] worker: SIGWINCH ignored.
+[2020-02-10 17:31:01 -0700] [4135] [INFO] Handling signal: winch
+[2020-02-10 17:31:01 -0700] [4135] [DEBUG] SIGWINCH ignored. Not daemonized
+[2020-02-10 17:31:01 -0700] [4170] [DEBUG] worker: SIGWINCH ignored.
+[2020-02-10 17:31:01 -0700] [4135] [INFO] Handling signal: winch
+[2020-02-10 17:31:01 -0700] [4135] [DEBUG] SIGWINCH ignored. Not daemonized
+[2020-02-10 17:31:01 -0700] [4170] [DEBUG] worker: SIGWINCH ignored.
+[2020-02-10 17:31:01 -0700] [4135] [INFO] Handling signal: winch
+[2020-02-10 17:31:01 -0700] [4135] [DEBUG] SIGWINCH ignored. Not daemonized
+[2020-02-10 17:31:01 -0700] [4170] [DEBUG] worker: SIGWINCH ignored.
+[2020-02-10 17:31:01 -0700] [4135] [INFO] Handling signal: winch
+[2020-02-10 17:31:01 -0700] [4135] [DEBUG] SIGWINCH ignored. Not daemonized
+[2020-02-10 17:31:01 -0700] [4170] [DEBUG] worker: SIGWINCH ignored.
+[2020-02-10 17:31:01 -0700] [4135] [INFO] Handling signal: winch
+[2020-02-10 17:31:01 -0700] [4135] [DEBUG] SIGWINCH ignored. Not daemonized
+[2020-02-10 17:31:01 -0700] [4170] [DEBUG] worker: SIGWINCH ignored.
+[2020-02-10 17:31:01 -0700] [4135] [INFO] Handling signal: winch
+[2020-02-10 17:31:01 -0700] [4135] [DEBUG] SIGWINCH ignored. Not daemonized
+[2020-02-10 17:31:02 -0700] [4170] [DEBUG] worker: SIGWINCH ignored.
+[2020-02-10 17:31:02 -0700] [4135] [INFO] Handling signal: winch
+[2020-02-10 17:31:02 -0700] [4135] [DEBUG] SIGWINCH ignored. Not daemonized
+[2020-02-10 17:31:02 -0700] [4170] [DEBUG] worker: SIGWINCH ignored.
+[2020-02-10 17:31:02 -0700] [4135] [INFO] Handling signal: winch
+[2020-02-10 17:31:02 -0700] [4135] [DEBUG] SIGWINCH ignored. Not daemonized
+[2020-02-10 17:31:02 -0700] [4170] [DEBUG] worker: SIGWINCH ignored.
+[2020-02-10 17:31:02 -0700] [4135] [INFO] Handling signal: winch
+[2020-02-10 17:31:02 -0700] [4135] [DEBUG] SIGWINCH ignored. Not daemonized
+[2020-02-10 17:31:02 -0700] [4170] [DEBUG] worker: SIGWINCH ignored.
+[2020-02-10 17:31:02 -0700] [4135] [INFO] Handling signal: winch
+[2020-02-10 17:31:02 -0700] [4135] [DEBUG] SIGWINCH ignored. Not daemonized
+[2020-02-10 17:31:02 -0700] [4170] [DEBUG] worker: SIGWINCH ignored.
+[2020-02-10 17:31:02 -0700] [4135] [INFO] Handling signal: winch
+[2020-02-10 17:31:02 -0700] [4135] [DEBUG] SIGWINCH ignored. Not daemonized
+[2020-02-10 17:31:02 -0700] [4170] [DEBUG] worker: SIGWINCH ignored.
+[2020-02-10 17:31:02 -0700] [4135] [INFO] Handling signal: winch
+[2020-02-10 17:31:02 -0700] [4135] [DEBUG] SIGWINCH ignored. Not daemonized
+[2020-02-10 17:31:02 -0700] [4170] [DEBUG] worker: SIGWINCH ignored.
+[2020-02-10 17:31:02 -0700] [4135] [INFO] Handling signal: winch
+[2020-02-10 17:31:02 -0700] [4135] [DEBUG] SIGWINCH ignored. Not daemonized
+[2020-02-10 17:31:02 -0700] [4170] [DEBUG] worker: SIGWINCH ignored.
+[2020-02-10 17:31:02 -0700] [4135] [INFO] Handling signal: winch
+[2020-02-10 17:31:02 -0700] [4135] [DEBUG] SIGWINCH ignored. Not daemonized
+[2020-02-10 17:31:02 -0700] [4170] [DEBUG] worker: SIGWINCH ignored.
+[2020-02-10 17:31:02 -0700] [4135] [INFO] Handling signal: winch
+[2020-02-10 17:31:02 -0700] [4135] [DEBUG] SIGWINCH ignored. Not daemonized
+[2020-02-10 17:31:02 -0700] [4170] [DEBUG] worker: SIGWINCH ignored.
+[2020-02-10 17:31:02 -0700] [4135] [INFO] Handling signal: winch
+[2020-02-10 17:31:02 -0700] [4135] [DEBUG] SIGWINCH ignored. Not daemonized
+[2020-02-10 17:31:02 -0700] [4170] [DEBUG] worker: SIGWINCH ignored.
+[2020-02-10 17:31:02 -0700] [4135] [INFO] Handling signal: winch
+[2020-02-10 17:31:02 -0700] [4135] [DEBUG] SIGWINCH ignored. Not daemonized
+[2020-02-10 17:31:02 -0700] [4170] [DEBUG] worker: SIGWINCH ignored.
+[2020-02-10 17:31:02 -0700] [4135] [INFO] Handling signal: winch
+[2020-02-10 17:31:02 -0700] [4135] [DEBUG] SIGWINCH ignored. Not daemonized
+[2020-02-10 17:31:02 -0700] [4170] [DEBUG] worker: SIGWINCH ignored.
+[2020-02-10 17:31:02 -0700] [4135] [INFO] Handling signal: winch
+[2020-02-10 17:31:02 -0700] [4135] [DEBUG] SIGWINCH ignored. Not daemonized
+[2020-02-10 17:31:02 -0700] [4170] [DEBUG] worker: SIGWINCH ignored.
+[2020-02-10 17:31:02 -0700] [4135] [INFO] Handling signal: winch
+[2020-02-10 17:31:02 -0700] [4135] [DEBUG] SIGWINCH ignored. Not daemonized
+[2020-02-10 17:31:02 -0700] [4170] [DEBUG] worker: SIGWINCH ignored.
+[2020-02-10 17:31:02 -0700] [4135] [INFO] Handling signal: winch
+[2020-02-10 17:31:02 -0700] [4135] [DEBUG] SIGWINCH ignored. Not daemonized
+[2020-02-10 17:31:02 -0700] [4170] [DEBUG] worker: SIGWINCH ignored.
+[2020-02-10 17:31:02 -0700] [4135] [INFO] Handling signal: winch
+[2020-02-10 17:31:02 -0700] [4135] [DEBUG] SIGWINCH ignored. Not daemonized
+[2020-02-10 17:31:02 -0700] [4170] [DEBUG] worker: SIGWINCH ignored.
+[2020-02-10 17:31:02 -0700] [4135] [INFO] Handling signal: winch
+[2020-02-10 17:31:02 -0700] [4135] [DEBUG] SIGWINCH ignored. Not daemonized
+[2020-02-10 17:31:02 -0700] [4170] [DEBUG] worker: SIGWINCH ignored.
+[2020-02-10 17:31:02 -0700] [4135] [INFO] Handling signal: winch
+[2020-02-10 17:31:02 -0700] [4135] [DEBUG] SIGWINCH ignored. Not daemonized
+[2020-02-10 17:31:02 -0700] [4170] [DEBUG] worker: SIGWINCH ignored.
+[2020-02-10 17:31:02 -0700] [4135] [INFO] Handling signal: winch
+[2020-02-10 17:31:02 -0700] [4135] [DEBUG] SIGWINCH ignored. Not daemonized
+[2020-02-10 17:31:02 -0700] [4170] [DEBUG] worker: SIGWINCH ignored.
+[2020-02-10 17:31:02 -0700] [4135] [INFO] Handling signal: winch
+[2020-02-10 17:31:02 -0700] [4135] [DEBUG] SIGWINCH ignored. Not daemonized
+[2020-02-10 17:31:22 -0700] [4170] [DEBUG] OPTIONS /save_action
+[2020-02-10 17:31:22 -0700] [4170] [DEBUG] POST /save_action
+[2020-02-10 17:31:22 -0700] [4170] [ERROR] Error handling request /save_action
+Traceback (most recent call last):
+  File "/home/puttputt/.local/lib/python3.6/site-packages/gunicorn/workers/sync.py", line 134, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/home/puttputt/.local/lib/python3.6/site-packages/gunicorn/workers/sync.py", line 175, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "falcon/api.py", line 274, in falcon.api.API.__call__
+  File "falcon/api.py", line 269, in falcon.api.API.__call__
+  File "/home/puttputt/projects/falcon/api/app.py", line 12, in on_post
+    row = db.save_action(action, dog, timestamp)
+NameError: name 'timestamp' is not defined
+[2020-02-10 17:31:23 -0700] [4170] [DEBUG] OPTIONS /save_action
+[2020-02-10 17:31:23 -0700] [4170] [DEBUG] POST /save_action
+[2020-02-10 17:31:23 -0700] [4170] [ERROR] Error handling request /save_action
+Traceback (most recent call last):
+  File "/home/puttputt/.local/lib/python3.6/site-packages/gunicorn/workers/sync.py", line 134, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/home/puttputt/.local/lib/python3.6/site-packages/gunicorn/workers/sync.py", line 175, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "falcon/api.py", line 274, in falcon.api.API.__call__
+  File "falcon/api.py", line 269, in falcon.api.API.__call__
+  File "/home/puttputt/projects/falcon/api/app.py", line 12, in on_post
+    row = db.save_action(action, dog, timestamp)
+NameError: name 'timestamp' is not defined
+[2020-02-10 17:31:36 -0700] [4170] [INFO] Worker reloading: /home/puttputt/projects/falcon/api/app.py modified
+[2020-02-10 17:31:36 -0700] [4170] [INFO] Worker exiting (pid: 4170)
+[2020-02-10 17:31:36 -0700] [4247] [INFO] Booting worker with pid: 4247
+[2020-02-10 17:31:49 -0700] [4247] [INFO] Worker reloading: /home/puttputt/projects/falcon/api/app.py modified
+[2020-02-10 17:31:49 -0700] [4247] [INFO] Worker exiting (pid: 4247)
+[2020-02-10 17:31:49 -0700] [4253] [INFO] Booting worker with pid: 4253
+[2020-02-10 17:31:58 -0700] [4253] [INFO] Worker reloading: /home/puttputt/projects/falcon/api/app.py modified
+[2020-02-10 17:31:58 -0700] [4253] [INFO] Worker exiting (pid: 4253)
+[2020-02-10 17:31:58 -0700] [4259] [INFO] Booting worker with pid: 4259
+[2020-02-10 17:31:59 -0700] [4259] [INFO] Worker reloading: /home/puttputt/projects/falcon/api/app.py modified
+[2020-02-10 17:31:59 -0700] [4259] [INFO] Worker exiting (pid: 4259)
+[2020-02-10 17:31:59 -0700] [4265] [INFO] Booting worker with pid: 4265
+[2020-02-10 17:32:01 -0700] [4265] [DEBUG] OPTIONS /save_action
+[2020-02-10 17:32:01 -0700] [4265] [DEBUG] POST /save_action
+[2020-02-10 17:32:01 -0700] [4265] [ERROR] Error handling request /save_action
+Traceback (most recent call last):
+  File "/home/puttputt/.local/lib/python3.6/site-packages/gunicorn/workers/sync.py", line 134, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/home/puttputt/.local/lib/python3.6/site-packages/gunicorn/workers/sync.py", line 175, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "falcon/api.py", line 274, in falcon.api.API.__call__
+  File "falcon/api.py", line 269, in falcon.api.API.__call__
+  File "/home/puttputt/projects/falcon/api/app.py", line 10, in on_post
+    row = db.save_action(action, dog, timestamp)
+NameError: name 'timestamp' is not defined
+[2020-02-10 17:32:04 -0700] [4265] [DEBUG] OPTIONS /save_action
+[2020-02-10 17:32:04 -0700] [4265] [DEBUG] POST /save_action
+[2020-02-10 17:32:04 -0700] [4265] [ERROR] Error handling request /save_action
+Traceback (most recent call last):
+  File "/home/puttputt/.local/lib/python3.6/site-packages/gunicorn/workers/sync.py", line 134, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/home/puttputt/.local/lib/python3.6/site-packages/gunicorn/workers/sync.py", line 175, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "falcon/api.py", line 274, in falcon.api.API.__call__
+  File "falcon/api.py", line 269, in falcon.api.API.__call__
+  File "/home/puttputt/projects/falcon/api/app.py", line 10, in on_post
+    row = db.save_action(action, dog, timestamp)
+NameError: name 'timestamp' is not defined
+[2020-02-10 17:32:07 -0700] [4135] [INFO] Handling signal: int
+[2020-02-10 17:32:07 -0700] [4265] [INFO] Worker exiting (pid: 4265)
+[2020-02-10 17:32:07 -0700] [4135] [INFO] Shutting down: Master
+[2020-02-10 17:32:08 -0700] [4278] [DEBUG] Current configuration:
+  config: gunicorn.config.py
+  bind: ['localhost:8000']
+  backlog: 2048
+  workers: 1
+  worker_class: sync
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 300
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: True
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/puttputt/projects/falcon
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1000
+  group: 1000
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: gunicorn.log
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: gunicorn.error.log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: api.app
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7f040aba7b70>
+  on_reload: <function OnReload.on_reload at 0x7f040aba7c80>
+  when_ready: <function WhenReady.when_ready at 0x7f040aba7d90>
+  pre_fork: <function Prefork.pre_fork at 0x7f040aba7ea0>
+  post_fork: <function Postfork.post_fork at 0x7f040a69f048>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7f040a69f158>
+  worker_int: <function WorkerInt.worker_int at 0x7f040a69f268>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7f040a69f378>
+  pre_exec: <function PreExec.pre_exec at 0x7f040a69f488>
+  pre_request: <function PreRequest.pre_request at 0x7f040a69f598>
+  post_request: <function PostRequest.post_request at 0x7f040a69f620>
+  child_exit: <function ChildExit.child_exit at 0x7f040a69f730>
+  worker_exit: <function WorkerExit.worker_exit at 0x7f040a69f840>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7f040a69f950>
+  on_exit: <function OnExit.on_exit at 0x7f040a69fa60>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2020-02-10 17:32:08 -0700] [4278] [INFO] Starting gunicorn 20.0.4
+[2020-02-10 17:32:08 -0700] [4278] [DEBUG] Arbiter booted
+[2020-02-10 17:32:08 -0700] [4278] [INFO] Listening at: http://127.0.0.1:8000 (4278)
+[2020-02-10 17:32:08 -0700] [4278] [INFO] Using worker: sync
+[2020-02-10 17:32:08 -0700] [4282] [INFO] Booting worker with pid: 4282
+[2020-02-10 17:32:08 -0700] [4278] [DEBUG] 1 workers
+[2020-02-10 17:32:16 -0700] [4282] [INFO] Worker reloading: /home/puttputt/projects/falcon/api/app.py modified
+[2020-02-10 17:32:16 -0700] [4282] [INFO] Worker exiting (pid: 4282)
+[2020-02-10 17:32:16 -0700] [4288] [INFO] Booting worker with pid: 4288
+[2020-02-10 17:32:19 -0700] [4278] [INFO] Handling signal: int
+[2020-02-10 17:32:19 -0700] [4288] [INFO] Worker exiting (pid: 4288)
+[2020-02-10 17:32:19 -0700] [4278] [INFO] Shutting down: Master
+[2020-02-10 17:32:21 -0700] [4296] [DEBUG] Current configuration:
+  config: gunicorn.config.py
+  bind: ['localhost:8000']
+  backlog: 2048
+  workers: 1
+  worker_class: sync
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 300
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: True
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/puttputt/projects/falcon
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1000
+  group: 1000
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: gunicorn.log
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: gunicorn.error.log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: api.app
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7f2f966a4b70>
+  on_reload: <function OnReload.on_reload at 0x7f2f966a4c80>
+  when_ready: <function WhenReady.when_ready at 0x7f2f966a4d90>
+  pre_fork: <function Prefork.pre_fork at 0x7f2f966a4ea0>
+  post_fork: <function Postfork.post_fork at 0x7f2f9619c048>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7f2f9619c158>
+  worker_int: <function WorkerInt.worker_int at 0x7f2f9619c268>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7f2f9619c378>
+  pre_exec: <function PreExec.pre_exec at 0x7f2f9619c488>
+  pre_request: <function PreRequest.pre_request at 0x7f2f9619c598>
+  post_request: <function PostRequest.post_request at 0x7f2f9619c620>
+  child_exit: <function ChildExit.child_exit at 0x7f2f9619c730>
+  worker_exit: <function WorkerExit.worker_exit at 0x7f2f9619c840>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7f2f9619c950>
+  on_exit: <function OnExit.on_exit at 0x7f2f9619ca60>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2020-02-10 17:32:21 -0700] [4296] [INFO] Starting gunicorn 20.0.4
+[2020-02-10 17:32:21 -0700] [4296] [DEBUG] Arbiter booted
+[2020-02-10 17:32:21 -0700] [4296] [INFO] Listening at: http://127.0.0.1:8000 (4296)
+[2020-02-10 17:32:21 -0700] [4296] [INFO] Using worker: sync
+[2020-02-10 17:32:21 -0700] [4299] [INFO] Booting worker with pid: 4299
+[2020-02-10 17:32:21 -0700] [4296] [DEBUG] 1 workers
+[2020-02-10 17:32:24 -0700] [4299] [DEBUG] OPTIONS /save_action
+[2020-02-10 17:32:24 -0700] [4299] [DEBUG] POST /save_action
+[2020-02-10 17:32:24 -0700] [4299] [ERROR] Error handling request /save_action
+Traceback (most recent call last):
+  File "/home/puttputt/.local/lib/python3.6/site-packages/gunicorn/workers/sync.py", line 134, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/home/puttputt/.local/lib/python3.6/site-packages/gunicorn/workers/sync.py", line 175, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "falcon/api.py", line 274, in falcon.api.API.__call__
+  File "falcon/api.py", line 269, in falcon.api.API.__call__
+  File "/home/puttputt/projects/falcon/api/app.py", line 10, in on_post
+    row = db.save_action(action, dog, timestamp)
+NameError: name 'timestamp' is not defined
+[2020-02-10 17:32:26 -0700] [4299] [DEBUG] OPTIONS /save_action
+[2020-02-10 17:32:26 -0700] [4299] [DEBUG] POST /save_action
+[2020-02-10 17:32:26 -0700] [4299] [ERROR] Error handling request /save_action
+Traceback (most recent call last):
+  File "/home/puttputt/.local/lib/python3.6/site-packages/gunicorn/workers/sync.py", line 134, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/home/puttputt/.local/lib/python3.6/site-packages/gunicorn/workers/sync.py", line 175, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "falcon/api.py", line 274, in falcon.api.API.__call__
+  File "falcon/api.py", line 269, in falcon.api.API.__call__
+  File "/home/puttputt/projects/falcon/api/app.py", line 10, in on_post
+    row = db.save_action(action, dog, timestamp)
+NameError: name 'timestamp' is not defined
+[2020-02-10 17:33:15 -0700] [4299] [DEBUG] OPTIONS /save_action
+[2020-02-10 17:33:15 -0700] [4299] [DEBUG] POST /save_action
+[2020-02-10 17:33:15 -0700] [4299] [ERROR] Error handling request /save_action
+Traceback (most recent call last):
+  File "/home/puttputt/.local/lib/python3.6/site-packages/gunicorn/workers/sync.py", line 134, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/home/puttputt/.local/lib/python3.6/site-packages/gunicorn/workers/sync.py", line 175, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "falcon/api.py", line 274, in falcon.api.API.__call__
+  File "falcon/api.py", line 269, in falcon.api.API.__call__
+  File "/home/puttputt/projects/falcon/api/app.py", line 10, in on_post
+    row = db.save_action(action, dog, timestamp)
+NameError: name 'timestamp' is not defined
+[2020-02-10 17:33:28 -0700] [4299] [DEBUG] worker: SIGWINCH ignored.
+[2020-02-10 17:33:28 -0700] [4296] [INFO] Handling signal: winch
+[2020-02-10 17:33:28 -0700] [4296] [DEBUG] SIGWINCH ignored. Not daemonized
+[2020-02-10 17:33:28 -0700] [4299] [DEBUG] worker: SIGWINCH ignored.
+[2020-02-10 17:33:28 -0700] [4296] [INFO] Handling signal: winch
+[2020-02-10 17:33:28 -0700] [4296] [DEBUG] SIGWINCH ignored. Not daemonized
+[2020-02-10 17:33:28 -0700] [4299] [DEBUG] worker: SIGWINCH ignored.
+[2020-02-10 17:33:28 -0700] [4296] [INFO] Handling signal: winch
+[2020-02-10 17:33:28 -0700] [4296] [DEBUG] SIGWINCH ignored. Not daemonized
+[2020-02-10 17:33:28 -0700] [4299] [DEBUG] worker: SIGWINCH ignored.
+[2020-02-10 17:33:28 -0700] [4296] [INFO] Handling signal: winch
+[2020-02-10 17:33:28 -0700] [4296] [DEBUG] SIGWINCH ignored. Not daemonized
+[2020-02-10 17:33:28 -0700] [4299] [DEBUG] worker: SIGWINCH ignored.
+[2020-02-10 17:33:28 -0700] [4296] [INFO] Handling signal: winch
+[2020-02-10 17:33:28 -0700] [4296] [DEBUG] SIGWINCH ignored. Not daemonized
+[2020-02-10 17:33:28 -0700] [4299] [DEBUG] worker: SIGWINCH ignored.
+[2020-02-10 17:33:28 -0700] [4296] [INFO] Handling signal: winch
+[2020-02-10 17:33:28 -0700] [4296] [DEBUG] SIGWINCH ignored. Not daemonized
+[2020-02-10 17:33:28 -0700] [4299] [DEBUG] worker: SIGWINCH ignored.
+[2020-02-10 17:33:28 -0700] [4296] [INFO] Handling signal: winch
+[2020-02-10 17:33:28 -0700] [4296] [DEBUG] SIGWINCH ignored. Not daemonized
+[2020-02-10 17:33:29 -0700] [4299] [DEBUG] worker: SIGWINCH ignored.
+[2020-02-10 17:33:29 -0700] [4296] [INFO] Handling signal: winch
+[2020-02-10 17:33:29 -0700] [4296] [DEBUG] SIGWINCH ignored. Not daemonized
+[2020-02-10 17:33:38 -0700] [4299] [DEBUG] OPTIONS /save_action
+[2020-02-10 17:33:38 -0700] [4299] [DEBUG] POST /save_action
+[2020-02-10 17:33:38 -0700] [4299] [ERROR] Error handling request /save_action
+Traceback (most recent call last):
+  File "/home/puttputt/.local/lib/python3.6/site-packages/gunicorn/workers/sync.py", line 134, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/home/puttputt/.local/lib/python3.6/site-packages/gunicorn/workers/sync.py", line 175, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "falcon/api.py", line 274, in falcon.api.API.__call__
+  File "falcon/api.py", line 269, in falcon.api.API.__call__
+  File "/home/puttputt/projects/falcon/api/app.py", line 10, in on_post
+    row = db.save_action(action, dog, timestamp)
+NameError: name 'timestamp' is not defined
+[2020-02-10 17:34:09 -0700] [4299] [INFO] Worker reloading: /home/puttputt/projects/falcon/api/app.py modified
+[2020-02-10 17:34:09 -0700] [4299] [INFO] Worker exiting (pid: 4299)
+[2020-02-10 17:34:09 -0700] [4379] [INFO] Booting worker with pid: 4379
+[2020-02-10 17:34:12 -0700] [4379] [DEBUG] OPTIONS /save_action
+[2020-02-10 17:34:12 -0700] [4379] [DEBUG] POST /save_action
+[2020-02-10 17:34:15 -0700] [4379] [DEBUG] POST /save_action
+[2020-02-10 17:34:19 -0700] [4379] [DEBUG] POST /save_action
+[2020-02-10 17:34:23 -0700] [4379] [DEBUG] POST /save_action
+[2020-02-10 17:34:40 -0700] [4379] [DEBUG] POST /save_action
+[2020-02-10 17:34:41 -0700] [4379] [DEBUG] POST /save_action
+[2020-02-10 17:46:14 -0700] [4379] [DEBUG] GET /list_actions
+[2020-02-10 17:46:32 -0700] [4379] [DEBUG] POST /save_action
+[2020-02-10 17:46:33 -0700] [4379] [DEBUG] POST /save_action
+[2020-02-10 17:46:34 -0700] [4379] [DEBUG] POST /save_action
+[2020-02-10 17:46:35 -0700] [4379] [DEBUG] POST /save_action
+[2020-02-10 17:46:35 -0700] [4379] [DEBUG] POST /save_action
+[2020-02-10 17:46:39 -0700] [4379] [DEBUG] GET /list_actions
+[2020-02-10 17:56:52 -0700] [4379] [INFO] Worker reloading: /home/puttputt/projects/falcon/helpers/db_helper.py modified
+[2020-02-10 17:56:52 -0700] [4379] [INFO] Worker exiting (pid: 4379)
+[2020-02-10 17:56:52 -0700] [5048] [INFO] Booting worker with pid: 5048
+[2020-02-10 17:56:59 -0700] [5048] [DEBUG] GET /list_actions
+[2020-02-10 17:56:59 -0700] [5048] [ERROR] Error handling request /list_actions
+Traceback (most recent call last):
+  File "/home/puttputt/.local/lib/python3.6/site-packages/gunicorn/workers/sync.py", line 134, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/home/puttputt/.local/lib/python3.6/site-packages/gunicorn/workers/sync.py", line 175, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "falcon/api.py", line 274, in falcon.api.API.__call__
+  File "falcon/api.py", line 269, in falcon.api.API.__call__
+  File "/home/puttputt/projects/falcon/api/app.py", line 24, in on_get
+    list = db.list_actions()
+  File "/home/puttputt/projects/falcon/helpers/db_helper.py", line 29, in list_actions
+    res = conn.execute("SELECT * FROM `actions` WHERE `timestamp` >= '2020-02-08' and `date` <= '2020-02-10'")
+sqlite3.OperationalError: no such column: date
+[2020-02-10 17:57:09 -0700] [5048] [INFO] Worker reloading: /home/puttputt/projects/falcon/helpers/db_helper.py modified
+[2020-02-10 17:57:09 -0700] [5048] [INFO] Worker exiting (pid: 5048)
+[2020-02-10 17:57:09 -0700] [5067] [INFO] Booting worker with pid: 5067
+[2020-02-10 17:57:11 -0700] [5067] [DEBUG] GET /list_actions
+[2020-02-10 17:57:29 -0700] [5067] [INFO] Worker reloading: /home/puttputt/projects/falcon/helpers/db_helper.py modified
+[2020-02-10 17:57:29 -0700] [5067] [INFO] Worker exiting (pid: 5067)
+[2020-02-10 17:57:29 -0700] [5081] [INFO] Booting worker with pid: 5081
+[2020-02-10 17:57:31 -0700] [5081] [DEBUG] GET /list_actions
+[2020-02-10 17:57:47 -0700] [5081] [INFO] Worker reloading: /home/puttputt/projects/falcon/helpers/db_helper.py modified
+[2020-02-10 17:57:47 -0700] [5081] [INFO] Worker exiting (pid: 5081)
+[2020-02-10 17:57:47 -0700] [5102] [INFO] Booting worker with pid: 5102
+[2020-02-10 17:57:49 -0700] [5102] [DEBUG] GET /list_actions
+[2020-02-10 17:58:11 -0700] [5102] [INFO] Worker reloading: /home/puttputt/projects/falcon/helpers/db_helper.py modified
+[2020-02-10 17:58:11 -0700] [5102] [INFO] Worker exiting (pid: 5102)
+[2020-02-10 17:58:11 -0700] [5112] [INFO] Booting worker with pid: 5112
+[2020-02-10 17:58:13 -0700] [5112] [DEBUG] GET /list_actions
+[2020-02-10 17:59:28 -0700] [5112] [INFO] Worker reloading: /home/puttputt/projects/falcon/helpers/db_helper.py modified
+[2020-02-10 17:59:28 -0700] [5112] [INFO] Worker exiting (pid: 5112)
+[2020-02-10 17:59:28 -0700] [5154] [INFO] Booting worker with pid: 5154
+[2020-02-10 17:59:31 -0700] [5154] [DEBUG] GET /list_actions
+[2020-02-10 18:01:25 -0700] [5154] [INFO] Worker reloading: /home/puttputt/projects/falcon/helpers/db_helper.py modified
+[2020-02-10 18:01:25 -0700] [5154] [INFO] Worker exiting (pid: 5154)
+[2020-02-10 18:01:25 -0700] [5239] [INFO] Booting worker with pid: 5239
+[2020-02-10 18:01:36 -0700] [5239] [INFO] Worker reloading: /home/puttputt/projects/falcon/helpers/db_helper.py modified
+[2020-02-10 18:01:36 -0700] [5239] [INFO] Worker exiting (pid: 5239)
+[2020-02-10 18:01:37 -0700] [5252] [INFO] Booting worker with pid: 5252
+[2020-02-10 18:02:02 -0700] [5252] [INFO] Worker reloading: /home/puttputt/projects/falcon/helpers/db_helper.py modified
+[2020-02-10 18:02:02 -0700] [5252] [INFO] Worker exiting (pid: 5252)
+[2020-02-10 18:02:02 -0700] [5259] [INFO] Booting worker with pid: 5259
+[2020-02-10 18:02:58 -0700] [5259] [INFO] Worker reloading: /home/puttputt/projects/falcon/helpers/db_helper.py modified
+[2020-02-10 18:02:58 -0700] [5259] [INFO] Worker exiting (pid: 5259)
+[2020-02-10 18:02:58 -0700] [5278] [INFO] Booting worker with pid: 5278
+[2020-02-10 18:03:04 -0700] [5278] [DEBUG] GET /list_actions
+[2020-02-10 18:03:04 -0700] [5278] [ERROR] Error handling request /list_actions
+Traceback (most recent call last):
+  File "/home/puttputt/.local/lib/python3.6/site-packages/gunicorn/workers/sync.py", line 134, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/home/puttputt/.local/lib/python3.6/site-packages/gunicorn/workers/sync.py", line 175, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "falcon/api.py", line 274, in falcon.api.API.__call__
+  File "falcon/api.py", line 269, in falcon.api.API.__call__
+  File "/home/puttputt/projects/falcon/api/app.py", line 24, in on_get
+    list = db.list_actions()
+  File "/home/puttputt/projects/falcon/helpers/db_helper.py", line 29, in list_actions
+    yesterday_morning = determine_yesterday_morning()
+NameError: name 'determine_yesterday_morning' is not defined
+[2020-02-10 18:03:15 -0700] [5278] [INFO] Worker reloading: /home/puttputt/projects/falcon/helpers/db_helper.py modified
+[2020-02-10 18:03:15 -0700] [5278] [INFO] Worker exiting (pid: 5278)
+[2020-02-10 18:03:15 -0700] [5293] [INFO] Booting worker with pid: 5293
+[2020-02-10 18:03:18 -0700] [5293] [DEBUG] GET /list_actions
+[2020-02-10 18:03:18 -0700] [5293] [ERROR] Error handling request /list_actions
+Traceback (most recent call last):
+  File "/home/puttputt/.local/lib/python3.6/site-packages/gunicorn/workers/sync.py", line 134, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/home/puttputt/.local/lib/python3.6/site-packages/gunicorn/workers/sync.py", line 175, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "falcon/api.py", line 274, in falcon.api.API.__call__
+  File "falcon/api.py", line 269, in falcon.api.API.__call__
+  File "/home/puttputt/projects/falcon/api/app.py", line 24, in on_get
+    list = db.list_actions()
+  File "/home/puttputt/projects/falcon/helpers/db_helper.py", line 35, in list_actions
+    yesterday_morning = determine_yesterday_morning()
+NameError: name 'determine_yesterday_morning' is not defined
+[2020-02-10 18:03:39 -0700] [5293] [INFO] Worker reloading: /home/puttputt/projects/falcon/helpers/db_helper.py modified
+[2020-02-10 18:03:39 -0700] [5293] [INFO] Worker exiting (pid: 5293)
+[2020-02-10 18:03:39 -0700] [5332] [INFO] Booting worker with pid: 5332
+[2020-02-10 18:03:42 -0700] [5332] [DEBUG] GET /list_actions
+[2020-02-10 18:03:42 -0700] [5332] [ERROR] Error handling request /list_actions
+Traceback (most recent call last):
+  File "/home/puttputt/.local/lib/python3.6/site-packages/gunicorn/workers/sync.py", line 134, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/home/puttputt/.local/lib/python3.6/site-packages/gunicorn/workers/sync.py", line 175, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "falcon/api.py", line 274, in falcon.api.API.__call__
+  File "falcon/api.py", line 269, in falcon.api.API.__call__
+  File "/home/puttputt/projects/falcon/api/app.py", line 24, in on_get
+    list = db.list_actions()
+  File "/home/puttputt/projects/falcon/helpers/db_helper.py", line 35, in list_actions
+    yesterday_morning = self.determine_yesterday_morning()
+  File "/home/puttputt/projects/falcon/helpers/db_helper.py", line 16, in determine_yesterday_morning
+    yesterday_morning = yesterday + " 00:00:00"
+TypeError: unsupported operand type(s) for +: 'datetime.date' and 'str'
+[2020-02-10 18:03:58 -0700] [5332] [INFO] Worker reloading: /home/puttputt/projects/falcon/helpers/db_helper.py modified
+[2020-02-10 18:03:58 -0700] [5332] [INFO] Worker exiting (pid: 5332)
+[2020-02-10 18:03:58 -0700] [5342] [INFO] Booting worker with pid: 5342
+[2020-02-10 18:04:01 -0700] [5342] [DEBUG] GET /list_actions
+[2020-02-10 18:04:01 -0700] [5342] [ERROR] Error handling request /list_actions
+Traceback (most recent call last):
+  File "/home/puttputt/.local/lib/python3.6/site-packages/gunicorn/workers/sync.py", line 134, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/home/puttputt/.local/lib/python3.6/site-packages/gunicorn/workers/sync.py", line 175, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "falcon/api.py", line 274, in falcon.api.API.__call__
+  File "falcon/api.py", line 269, in falcon.api.API.__call__
+  File "/home/puttputt/projects/falcon/api/app.py", line 24, in on_get
+    list = db.list_actions()
+  File "/home/puttputt/projects/falcon/helpers/db_helper.py", line 36, in list_actions
+    res = conn.execute("SELECT * FROM `actions` WHERE `timestamp` >= " + yesterday_morning)
+sqlite3.OperationalError: near "00": syntax error
+[2020-02-10 18:04:38 -0700] [5342] [INFO] Worker reloading: /home/puttputt/projects/falcon/helpers/db_helper.py modified
+[2020-02-10 18:04:38 -0700] [5342] [INFO] Worker exiting (pid: 5342)
+[2020-02-10 18:04:38 -0700] [5362] [INFO] Booting worker with pid: 5362
+[2020-02-10 18:04:40 -0700] [5362] [DEBUG] GET /list_actions
+[2020-02-10 18:04:40 -0700] [5362] [ERROR] Error handling request /list_actions
+Traceback (most recent call last):
+  File "/home/puttputt/.local/lib/python3.6/site-packages/gunicorn/workers/sync.py", line 134, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/home/puttputt/.local/lib/python3.6/site-packages/gunicorn/workers/sync.py", line 175, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "falcon/api.py", line 274, in falcon.api.API.__call__
+  File "falcon/api.py", line 269, in falcon.api.API.__call__
+  File "/home/puttputt/projects/falcon/api/app.py", line 24, in on_get
+    list = db.list_actions()
+  File "/home/puttputt/projects/falcon/helpers/db_helper.py", line 38, in list_actions
+    res = conn.execute("SELECT * FROM `actions` WHERE `timestamp` >= " + yesterday_morning)
+sqlite3.OperationalError: near ":00": syntax error
+[2020-02-10 18:04:54 -0700] [5362] [INFO] Worker reloading: /home/puttputt/projects/falcon/helpers/db_helper.py modified
+[2020-02-10 18:04:54 -0700] [5362] [INFO] Worker exiting (pid: 5362)
+[2020-02-10 18:04:54 -0700] [5379] [INFO] Booting worker with pid: 5379
+[2020-02-10 18:04:57 -0700] [5379] [DEBUG] GET /list_actions
+[2020-02-10 18:04:57 -0700] [5379] [ERROR] Error handling request /list_actions
+Traceback (most recent call last):
+  File "/home/puttputt/.local/lib/python3.6/site-packages/gunicorn/workers/sync.py", line 134, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/home/puttputt/.local/lib/python3.6/site-packages/gunicorn/workers/sync.py", line 175, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "falcon/api.py", line 274, in falcon.api.API.__call__
+  File "falcon/api.py", line 269, in falcon.api.API.__call__
+  File "/home/puttputt/projects/falcon/api/app.py", line 24, in on_get
+    list = db.list_actions()
+  File "/home/puttputt/projects/falcon/helpers/db_helper.py", line 38, in list_actions
+    res = conn.execute("SELECT * FROM `actions` WHERE `timestamp` >= " + yesterday_morning)
+sqlite3.OperationalError: near ":00": syntax error
+[2020-02-10 18:33:34 -0700] [4296] [INFO] Handling signal: hup
+[2020-02-10 18:33:34 -0700] [4296] [INFO] Hang up: Master
+[2020-02-10 18:33:34 -0700] [4296] [DEBUG] Current configuration:
+  config: gunicorn.config.py
+  bind: ['localhost:8000']
+  backlog: 2048
+  workers: 1
+  worker_class: sync
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 300
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: True
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/puttputt/projects/falcon
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1000
+  group: 1000
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: gunicorn.log
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: gunicorn.error.log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: api.app
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7f2f966a4b70>
+  on_reload: <function OnReload.on_reload at 0x7f2f966a4c80>
+  when_ready: <function WhenReady.when_ready at 0x7f2f966a4d90>
+  pre_fork: <function Prefork.pre_fork at 0x7f2f966a4ea0>
+  post_fork: <function Postfork.post_fork at 0x7f2f9619c048>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7f2f9619c158>
+  worker_int: <function WorkerInt.worker_int at 0x7f2f9619c268>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7f2f9619c378>
+  pre_exec: <function PreExec.pre_exec at 0x7f2f9619c488>
+  pre_request: <function PreRequest.pre_request at 0x7f2f9619c598>
+  post_request: <function PostRequest.post_request at 0x7f2f9619c620>
+  child_exit: <function ChildExit.child_exit at 0x7f2f9619c730>
+  worker_exit: <function WorkerExit.worker_exit at 0x7f2f9619c840>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7f2f9619c950>
+  on_exit: <function OnExit.on_exit at 0x7f2f9619ca60>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2020-02-10 18:33:34 -0700] [4296] [INFO] Handling signal: hup
+[2020-02-10 18:33:34 -0700] [4296] [INFO] Hang up: Master
+[2020-02-10 18:33:34 -0700] [4296] [DEBUG] Current configuration:
+  config: gunicorn.config.py
+  bind: ['localhost:8000']
+  backlog: 2048
+  workers: 1
+  worker_class: sync
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 300
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: True
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/puttputt/projects/falcon
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1000
+  group: 1000
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: gunicorn.log
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: gunicorn.error.log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: api.app
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7f2f966a4b70>
+  on_reload: <function OnReload.on_reload at 0x7f2f966a4c80>
+  when_ready: <function WhenReady.when_ready at 0x7f2f966a4d90>
+  pre_fork: <function Prefork.pre_fork at 0x7f2f966a4ea0>
+  post_fork: <function Postfork.post_fork at 0x7f2f9619c048>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7f2f9619c158>
+  worker_int: <function WorkerInt.worker_int at 0x7f2f9619c268>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7f2f9619c378>
+  pre_exec: <function PreExec.pre_exec at 0x7f2f9619c488>
+  pre_request: <function PreRequest.pre_request at 0x7f2f9619c598>
+  post_request: <function PostRequest.post_request at 0x7f2f9619c620>
+  child_exit: <function ChildExit.child_exit at 0x7f2f9619c730>
+  worker_exit: <function WorkerExit.worker_exit at 0x7f2f9619c840>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7f2f9619c950>
+  on_exit: <function OnExit.on_exit at 0x7f2f9619ca60>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2020-02-10 18:33:34 -0700] [6007] [INFO] Booting worker with pid: 6007
+[2020-02-10 18:33:34 -0700] [6006] [INFO] Booting worker with pid: 6006
