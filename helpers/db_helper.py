@@ -33,9 +33,16 @@ class DbHelper:
 
     def list_actions(self):
         conn = sqlite3.connect(self.db_path)
-        # res = conn.execute("SELECT * FROM `actions`")
-        yesterday_morning = self.determine_yesterday_morning()
-        res = conn.execute("SELECT * FROM `actions` WHERE `timestamp` >= " + yesterday_morning)
+        res = conn.execute("SELECT * FROM `actions`")
+        # yesterday_morning = self.determine_yesterday_morning()
+        # res = conn.execute("SELECT * FROM `actions` WHERE `timestamp` >= " + yesterday_morning)
         data = res.fetchall()
         pprint.pprint(data)
         return data
+
+    def delete_actions(self):
+        conn = sqlite3.connect(self.db_path)
+        cursor = conn.cursor()
+        cursor.execute("DELETE FROM actions")
+        conn.commit()
+        conn.close()

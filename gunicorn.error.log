@@ -2122,3 +2122,699 @@ sqlite3.OperationalError: near ":00": syntax error
   strip_header_spaces: False
 [2020-02-10 18:33:34 -0700] [6007] [INFO] Booting worker with pid: 6007
 [2020-02-10 18:33:34 -0700] [6006] [INFO] Booting worker with pid: 6006
+[2020-02-13 18:58:50 -0700] [2340] [DEBUG] Current configuration:
+  config: gunicorn.config.py
+  bind: ['localhost:8000']
+  backlog: 2048
+  workers: 1
+  worker_class: sync
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 300
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: True
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/puttputt/projects/falcon
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1000
+  group: 1000
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: gunicorn.log
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: gunicorn.error.log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: api.app
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7f8e7c55db70>
+  on_reload: <function OnReload.on_reload at 0x7f8e7c55dc80>
+  when_ready: <function WhenReady.when_ready at 0x7f8e7c55dd90>
+  pre_fork: <function Prefork.pre_fork at 0x7f8e7c55dea0>
+  post_fork: <function Postfork.post_fork at 0x7f8e7c055048>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7f8e7c055158>
+  worker_int: <function WorkerInt.worker_int at 0x7f8e7c055268>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7f8e7c055378>
+  pre_exec: <function PreExec.pre_exec at 0x7f8e7c055488>
+  pre_request: <function PreRequest.pre_request at 0x7f8e7c055598>
+  post_request: <function PostRequest.post_request at 0x7f8e7c055620>
+  child_exit: <function ChildExit.child_exit at 0x7f8e7c055730>
+  worker_exit: <function WorkerExit.worker_exit at 0x7f8e7c055840>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7f8e7c055950>
+  on_exit: <function OnExit.on_exit at 0x7f8e7c055a60>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2020-02-13 18:58:50 -0700] [2340] [INFO] Starting gunicorn 20.0.4
+[2020-02-13 18:58:50 -0700] [2340] [DEBUG] Arbiter booted
+[2020-02-13 18:58:50 -0700] [2340] [INFO] Listening at: http://127.0.0.1:8000 (2340)
+[2020-02-13 18:58:50 -0700] [2340] [INFO] Using worker: sync
+[2020-02-13 18:58:50 -0700] [2343] [INFO] Booting worker with pid: 2343
+[2020-02-13 18:58:50 -0700] [2340] [DEBUG] 1 workers
+[2020-02-13 18:58:54 -0700] [2343] [DEBUG] worker: SIGWINCH ignored.
+[2020-02-13 18:58:54 -0700] [2340] [INFO] Handling signal: winch
+[2020-02-13 18:58:54 -0700] [2340] [DEBUG] SIGWINCH ignored. Not daemonized
+[2020-02-13 18:59:00 -0700] [2340] [INFO] Handling signal: int
+[2020-02-13 18:59:00 -0700] [2343] [INFO] Worker exiting (pid: 2343)
+[2020-02-13 18:59:00 -0700] [2340] [INFO] Shutting down: Master
+[2020-02-13 18:59:13 -0700] [2354] [DEBUG] Current configuration:
+  config: gunicorn.config.py
+  bind: ['localhost:8000']
+  backlog: 2048
+  workers: 1
+  worker_class: sync
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 300
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: True
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/puttputt/projects/falcon
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1000
+  group: 1000
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: gunicorn.log
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: gunicorn.error.log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: api.app
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7f8a0b688b70>
+  on_reload: <function OnReload.on_reload at 0x7f8a0b688c80>
+  when_ready: <function WhenReady.when_ready at 0x7f8a0b688d90>
+  pre_fork: <function Prefork.pre_fork at 0x7f8a0b688ea0>
+  post_fork: <function Postfork.post_fork at 0x7f8a0b180048>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7f8a0b180158>
+  worker_int: <function WorkerInt.worker_int at 0x7f8a0b180268>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7f8a0b180378>
+  pre_exec: <function PreExec.pre_exec at 0x7f8a0b180488>
+  pre_request: <function PreRequest.pre_request at 0x7f8a0b180598>
+  post_request: <function PostRequest.post_request at 0x7f8a0b180620>
+  child_exit: <function ChildExit.child_exit at 0x7f8a0b180730>
+  worker_exit: <function WorkerExit.worker_exit at 0x7f8a0b180840>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7f8a0b180950>
+  on_exit: <function OnExit.on_exit at 0x7f8a0b180a60>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2020-02-13 18:59:13 -0700] [2354] [INFO] Starting gunicorn 20.0.4
+[2020-02-13 18:59:13 -0700] [2354] [DEBUG] Arbiter booted
+[2020-02-13 18:59:13 -0700] [2354] [INFO] Listening at: http://127.0.0.1:8000 (2354)
+[2020-02-13 18:59:13 -0700] [2354] [INFO] Using worker: sync
+[2020-02-13 18:59:13 -0700] [2357] [INFO] Booting worker with pid: 2357
+[2020-02-13 18:59:13 -0700] [2354] [DEBUG] 1 workers
+[2020-02-13 18:59:19 -0700] [2354] [INFO] Handling signal: int
+[2020-02-13 18:59:19 -0700] [2357] [INFO] Worker exiting (pid: 2357)
+[2020-02-13 18:59:19 -0700] [2354] [INFO] Shutting down: Master
+[2020-02-13 19:02:10 -0700] [2728] [DEBUG] Current configuration:
+  config: gunicorn.config.py
+  bind: ['localhost:8000']
+  backlog: 2048
+  workers: 1
+  worker_class: sync
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 300
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: True
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/puttputt/projects/falcon
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1000
+  group: 1000
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: gunicorn.log
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: gunicorn.error.log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: api.app
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7f0a1cb3fb70>
+  on_reload: <function OnReload.on_reload at 0x7f0a1cb3fc80>
+  when_ready: <function WhenReady.when_ready at 0x7f0a1cb3fd90>
+  pre_fork: <function Prefork.pre_fork at 0x7f0a1cb3fea0>
+  post_fork: <function Postfork.post_fork at 0x7f0a1c637048>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7f0a1c637158>
+  worker_int: <function WorkerInt.worker_int at 0x7f0a1c637268>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7f0a1c637378>
+  pre_exec: <function PreExec.pre_exec at 0x7f0a1c637488>
+  pre_request: <function PreRequest.pre_request at 0x7f0a1c637598>
+  post_request: <function PostRequest.post_request at 0x7f0a1c637620>
+  child_exit: <function ChildExit.child_exit at 0x7f0a1c637730>
+  worker_exit: <function WorkerExit.worker_exit at 0x7f0a1c637840>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7f0a1c637950>
+  on_exit: <function OnExit.on_exit at 0x7f0a1c637a60>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2020-02-13 19:02:10 -0700] [2728] [INFO] Starting gunicorn 20.0.4
+[2020-02-13 19:02:10 -0700] [2728] [DEBUG] Arbiter booted
+[2020-02-13 19:02:10 -0700] [2728] [INFO] Listening at: http://127.0.0.1:8000 (2728)
+[2020-02-13 19:02:10 -0700] [2728] [INFO] Using worker: sync
+[2020-02-13 19:02:10 -0700] [2731] [INFO] Booting worker with pid: 2731
+[2020-02-13 19:02:10 -0700] [2728] [DEBUG] 1 workers
+[2020-02-13 19:02:14 -0700] [2731] [DEBUG] GET /list_actions
+[2020-02-13 19:02:14 -0700] [2731] [ERROR] Error handling request /list_actions
+Traceback (most recent call last):
+  File "/home/puttputt/.local/lib/python3.6/site-packages/gunicorn/workers/sync.py", line 134, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/home/puttputt/.local/lib/python3.6/site-packages/gunicorn/workers/sync.py", line 175, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "falcon/api.py", line 274, in falcon.api.API.__call__
+  File "falcon/api.py", line 269, in falcon.api.API.__call__
+  File "/home/puttputt/projects/falcon/api/app.py", line 24, in on_get
+    list = db.list_actions()
+  File "/home/puttputt/projects/falcon/helpers/db_helper.py", line 38, in list_actions
+    res = conn.execute("SELECT * FROM `actions` WHERE `timestamp` >= " + yesterday_morning)
+sqlite3.OperationalError: near ":00": syntax error
+[2020-02-13 19:03:17 -0700] [2731] [INFO] Worker reloading: /home/puttputt/projects/falcon/helpers/db_helper.py modified
+[2020-02-13 19:03:17 -0700] [2731] [INFO] Worker exiting (pid: 2731)
+[2020-02-13 19:03:17 -0700] [3293] [INFO] Booting worker with pid: 3293
+[2020-02-13 19:03:19 -0700] [3293] [DEBUG] GET /list_actions
+[2020-02-13 19:03:38 -0700] [3293] [INFO] Worker reloading: /home/puttputt/projects/falcon/helpers/db_helper.py modified
+[2020-02-13 19:03:38 -0700] [3293] [INFO] Worker exiting (pid: 3293)
+[2020-02-13 19:03:38 -0700] [3314] [INFO] Booting worker with pid: 3314
+[2020-02-13 19:03:40 -0700] [3314] [INFO] Worker reloading: /home/puttputt/projects/falcon/helpers/db_helper.py modified
+[2020-02-13 19:03:40 -0700] [3314] [INFO] Worker exiting (pid: 3314)
+[2020-02-13 19:03:40 -0700] [3319] [INFO] Booting worker with pid: 3319
+[2020-02-13 19:03:43 -0700] [3319] [DEBUG] GET /list_actions
+[2020-02-13 19:03:43 -0700] [3319] [ERROR] Error handling request /list_actions
+Traceback (most recent call last):
+  File "/home/puttputt/.local/lib/python3.6/site-packages/gunicorn/workers/sync.py", line 134, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/home/puttputt/.local/lib/python3.6/site-packages/gunicorn/workers/sync.py", line 175, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "falcon/api.py", line 274, in falcon.api.API.__call__
+  File "falcon/api.py", line 269, in falcon.api.API.__call__
+  File "/home/puttputt/projects/falcon/api/app.py", line 24, in on_get
+    list = db.list_actions()
+  File "/home/puttputt/projects/falcon/helpers/db_helper.py", line 37, in list_actions
+    res = conn.execute("DELETE * FROM `actions`")
+sqlite3.OperationalError: near "*": syntax error
+[2020-02-13 19:04:16 -0700] [3319] [INFO] Worker reloading: /home/puttputt/projects/falcon/helpers/db_helper.py modified
+[2020-02-13 19:04:16 -0700] [3319] [INFO] Worker exiting (pid: 3319)
+[2020-02-13 19:04:17 -0700] [3388] [INFO] Booting worker with pid: 3388
+[2020-02-13 19:04:18 -0700] [3388] [INFO] Worker reloading: /home/puttputt/projects/falcon/helpers/db_helper.py modified
+[2020-02-13 19:04:18 -0700] [3388] [INFO] Worker exiting (pid: 3388)
+[2020-02-13 19:04:18 -0700] [3394] [INFO] Booting worker with pid: 3394
+[2020-02-13 19:04:19 -0700] [3394] [DEBUG] GET /list_actions
+[2020-02-13 19:04:50 -0700] [3394] [INFO] Worker reloading: /home/puttputt/projects/falcon/helpers/db_helper.py modified
+[2020-02-13 19:04:50 -0700] [3394] [INFO] Worker exiting (pid: 3394)
+[2020-02-13 19:04:50 -0700] [3464] [INFO] Booting worker with pid: 3464
+[2020-02-13 19:04:51 -0700] [3464] [INFO] Worker reloading: /home/puttputt/projects/falcon/helpers/db_helper.py modified
+[2020-02-13 19:04:51 -0700] [3464] [INFO] Worker exiting (pid: 3464)
+[2020-02-13 19:04:51 -0700] [3471] [INFO] Booting worker with pid: 3471
+[2020-02-13 19:04:53 -0700] [3471] [DEBUG] GET /list_actions
+[2020-02-13 19:05:03 -0700] [3471] [INFO] Worker reloading: /home/puttputt/projects/falcon/helpers/db_helper.py modified
+[2020-02-13 19:05:03 -0700] [3471] [INFO] Worker exiting (pid: 3471)
+[2020-02-13 19:05:03 -0700] [3489] [INFO] Booting worker with pid: 3489
+[2020-02-13 19:05:04 -0700] [3489] [DEBUG] GET /list_actions
+[2020-02-13 19:05:17 -0700] [3489] [INFO] Worker reloading: /home/puttputt/projects/falcon/helpers/db_helper.py modified
+[2020-02-13 19:05:17 -0700] [3489] [INFO] Worker exiting (pid: 3489)
+[2020-02-13 19:05:17 -0700] [3538] [INFO] Booting worker with pid: 3538
+[2020-02-13 19:05:20 -0700] [3538] [DEBUG] GET /list_actions
+[2020-02-13 19:05:26 -0700] [3538] [DEBUG] GET /list_actions
+[2020-02-13 19:05:38 -0700] [3538] [DEBUG] POST /save_action
+[2020-02-13 19:05:38 -0700] [3538] [ERROR] Error handling request /save_action
+Traceback (most recent call last):
+  File "/home/puttputt/.local/lib/python3.6/site-packages/gunicorn/workers/sync.py", line 134, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/home/puttputt/.local/lib/python3.6/site-packages/gunicorn/workers/sync.py", line 175, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "falcon/api.py", line 274, in falcon.api.API.__call__
+  File "falcon/api.py", line 269, in falcon.api.API.__call__
+  File "/home/puttputt/projects/falcon/api/app.py", line 10, in on_post
+    timestamp = data['timestamp']
+KeyError: 'timestamp'
+[2020-02-13 19:06:37 -0700] [3538] [DEBUG] OPTIONS /save_action
+[2020-02-13 19:06:37 -0700] [3538] [DEBUG] POST /save_action
+[2020-02-13 19:06:53 -0700] [3538] [INFO] Worker reloading: /home/puttputt/projects/falcon/helpers/db_helper.py modified
+[2020-02-13 19:06:53 -0700] [3538] [INFO] Worker exiting (pid: 3538)
+[2020-02-13 19:06:53 -0700] [3612] [INFO] Booting worker with pid: 3612
+[2020-02-13 19:07:53 -0700] [3612] [DEBUG] POST /save_action
+[2020-02-13 19:08:01 -0700] [3612] [DEBUG] GET /list_actions
+[2020-02-13 19:08:56 -0700] [3612] [INFO] Worker reloading: /home/puttputt/projects/falcon/helpers/db_helper.py modified
+[2020-02-13 19:08:56 -0700] [3612] [INFO] Worker exiting (pid: 3612)
+[2020-02-13 19:08:56 -0700] [3666] [INFO] Booting worker with pid: 3666
+[2020-02-13 19:09:04 -0700] [3666] [INFO] Worker reloading: /home/puttputt/projects/falcon/helpers/db_helper.py modified
+[2020-02-13 19:09:04 -0700] [3666] [INFO] Worker exiting (pid: 3666)
+[2020-02-13 19:09:04 -0700] [3674] [INFO] Booting worker with pid: 3674
+[2020-02-13 19:09:11 -0700] [3674] [DEBUG] GET /list_actions
+[2020-02-13 19:09:11 -0700] [3674] [ERROR] Error handling request /list_actions
+Traceback (most recent call last):
+  File "/home/puttputt/.local/lib/python3.6/site-packages/gunicorn/workers/sync.py", line 134, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/home/puttputt/.local/lib/python3.6/site-packages/gunicorn/workers/sync.py", line 175, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "falcon/api.py", line 274, in falcon.api.API.__call__
+  File "falcon/api.py", line 269, in falcon.api.API.__call__
+  File "/home/puttputt/projects/falcon/api/app.py", line 24, in on_get
+    list = db.list_actions()
+  File "/home/puttputt/projects/falcon/helpers/db_helper.py", line 37, in list_actions
+    res = conn.execute("DELETE FROM `actions` WHERE `id` > `1`")
+sqlite3.OperationalError: no such column: 1
+[2020-02-13 19:09:38 -0700] [3674] [INFO] Worker reloading: /home/puttputt/projects/falcon/helpers/db_helper.py modified
+[2020-02-13 19:09:38 -0700] [3674] [INFO] Worker exiting (pid: 3674)
+[2020-02-13 19:09:38 -0700] [3695] [INFO] Booting worker with pid: 3695
+[2020-02-13 19:09:40 -0700] [3695] [DEBUG] GET /list_actions
+[2020-02-13 19:09:47 -0700] [3695] [INFO] Worker reloading: /home/puttputt/projects/falcon/helpers/db_helper.py modified
+[2020-02-13 19:09:47 -0700] [3695] [INFO] Worker exiting (pid: 3695)
+[2020-02-13 19:09:47 -0700] [3708] [INFO] Booting worker with pid: 3708
+[2020-02-13 19:09:48 -0700] [3708] [DEBUG] GET /list_actions
+[2020-02-13 19:09:57 -0700] [3708] [INFO] Worker reloading: /home/puttputt/projects/falcon/helpers/db_helper.py modified
+[2020-02-13 19:09:57 -0700] [3708] [INFO] Worker exiting (pid: 3708)
+[2020-02-13 19:09:57 -0700] [3723] [INFO] Booting worker with pid: 3723
+[2020-02-13 19:10:09 -0700] [3723] [INFO] Worker reloading: /home/puttputt/projects/falcon/helpers/db_helper.py modified
+[2020-02-13 19:10:09 -0700] [3723] [INFO] Worker exiting (pid: 3723)
+[2020-02-13 19:10:09 -0700] [3730] [INFO] Booting worker with pid: 3730
+[2020-02-13 19:10:09 -0700] [3730] [ERROR] EOL while scanning string literal (db_helper.py, line 37)
+Traceback (most recent call last):
+  File "/home/puttputt/.local/lib/python3.6/site-packages/gunicorn/workers/base.py", line 144, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/puttputt/.local/lib/python3.6/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/puttputt/.local/lib/python3.6/site-packages/gunicorn/app/wsgiapp.py", line 49, in load
+    return self.load_wsgiapp()
+  File "/home/puttputt/.local/lib/python3.6/site-packages/gunicorn/app/wsgiapp.py", line 39, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/puttputt/.local/lib/python3.6/site-packages/gunicorn/util.py", line 358, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/puttputt/projects/falcon/api/app.py", line 2, in <module>
+    from helpers.db_helper import *
+  File "/home/puttputt/projects/falcon/helpers/db_helper.py", line 37
+    res = conn.execute("DELETE * FROM actions)
+                                             ^
+SyntaxError: EOL while scanning string literal
+[2020-02-13 19:10:09 -0700] [3730] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/puttputt/.local/lib/python3.6/site-packages/gunicorn/workers/base.py", line 144, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/puttputt/.local/lib/python3.6/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/puttputt/.local/lib/python3.6/site-packages/gunicorn/app/wsgiapp.py", line 49, in load
+    return self.load_wsgiapp()
+  File "/home/puttputt/.local/lib/python3.6/site-packages/gunicorn/app/wsgiapp.py", line 39, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/puttputt/.local/lib/python3.6/site-packages/gunicorn/util.py", line 358, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/puttputt/projects/falcon/api/app.py", line 2, in <module>
+    from helpers.db_helper import *
+  File "/home/puttputt/projects/falcon/helpers/db_helper.py", line 37
+    res = conn.execute("DELETE * FROM actions)
+                                             ^
+SyntaxError: EOL while scanning string literal
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/puttputt/.local/lib/python3.6/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/home/puttputt/.local/lib/python3.6/site-packages/gunicorn/workers/base.py", line 119, in init_process
+    self.load_wsgi()
+  File "/home/puttputt/.local/lib/python3.6/site-packages/gunicorn/workers/base.py", line 157, in load_wsgi
+    self.reloader.add_extra_file(exc_val.filename)
+AttributeError: 'NoneType' object has no attribute 'add_extra_file'
+[2020-02-13 19:10:09 -0700] [3730] [INFO] Worker exiting (pid: 3730)
+[2020-02-13 19:10:09 -0700] [2728] [INFO] Shutting down: Master
+[2020-02-13 19:10:09 -0700] [2728] [INFO] Reason: Worker failed to boot.
+[2020-02-13 19:11:00 -0700] [3814] [DEBUG] Current configuration:
+  config: gunicorn.config.py
+  bind: ['localhost:8000']
+  backlog: 2048
+  workers: 1
+  worker_class: sync
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 300
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: True
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/puttputt/projects/falcon
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1000
+  group: 1000
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: gunicorn.log
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: gunicorn.error.log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: api.app
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7f9964a5bb70>
+  on_reload: <function OnReload.on_reload at 0x7f9964a5bc80>
+  when_ready: <function WhenReady.when_ready at 0x7f9964a5bd90>
+  pre_fork: <function Prefork.pre_fork at 0x7f9964a5bea0>
+  post_fork: <function Postfork.post_fork at 0x7f9964553048>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7f9964553158>
+  worker_int: <function WorkerInt.worker_int at 0x7f9964553268>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7f9964553378>
+  pre_exec: <function PreExec.pre_exec at 0x7f9964553488>
+  pre_request: <function PreRequest.pre_request at 0x7f9964553598>
+  post_request: <function PostRequest.post_request at 0x7f9964553620>
+  child_exit: <function ChildExit.child_exit at 0x7f9964553730>
+  worker_exit: <function WorkerExit.worker_exit at 0x7f9964553840>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7f9964553950>
+  on_exit: <function OnExit.on_exit at 0x7f9964553a60>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2020-02-13 19:11:00 -0700] [3814] [INFO] Starting gunicorn 20.0.4
+[2020-02-13 19:11:00 -0700] [3814] [DEBUG] Arbiter booted
+[2020-02-13 19:11:00 -0700] [3814] [INFO] Listening at: http://127.0.0.1:8000 (3814)
+[2020-02-13 19:11:00 -0700] [3814] [INFO] Using worker: sync
+[2020-02-13 19:11:00 -0700] [3817] [INFO] Booting worker with pid: 3817
+[2020-02-13 19:11:00 -0700] [3814] [DEBUG] 1 workers
+[2020-02-13 19:11:04 -0700] [3817] [DEBUG] GET /list_actions
+[2020-02-13 19:11:07 -0700] [3817] [DEBUG] GET /list_actions
+[2020-02-13 19:11:12 -0700] [3817] [INFO] Worker reloading: /home/puttputt/projects/falcon/helpers/db_helper.py modified
+[2020-02-13 19:11:12 -0700] [3817] [INFO] Worker exiting (pid: 3817)
+[2020-02-13 19:11:12 -0700] [3837] [INFO] Booting worker with pid: 3837
+[2020-02-13 19:11:12 -0700] [3837] [DEBUG] GET /list_actions
+[2020-02-13 19:11:49 -0700] [3837] [INFO] Worker reloading: /home/puttputt/projects/falcon/helpers/db_helper.py modified
+[2020-02-13 19:11:49 -0700] [3837] [INFO] Worker exiting (pid: 3837)
+[2020-02-13 19:11:49 -0700] [3862] [INFO] Booting worker with pid: 3862
+[2020-02-13 19:11:51 -0700] [3862] [INFO] Worker reloading: /home/puttputt/projects/falcon/helpers/db_helper.py modified
+[2020-02-13 19:11:51 -0700] [3862] [INFO] Worker exiting (pid: 3862)
+[2020-02-13 19:11:51 -0700] [3868] [INFO] Booting worker with pid: 3868
+[2020-02-13 19:11:52 -0700] [3868] [DEBUG] GET /list_actions
+[2020-02-13 19:11:55 -0700] [3868] [INFO] Worker reloading: /home/puttputt/projects/falcon/helpers/db_helper.py modified
+[2020-02-13 19:11:55 -0700] [3868] [INFO] Worker exiting (pid: 3868)
+[2020-02-13 19:11:55 -0700] [3880] [INFO] Booting worker with pid: 3880
+[2020-02-13 19:11:57 -0700] [3880] [DEBUG] GET /list_actions
+[2020-02-13 19:12:16 -0700] [3880] [INFO] Worker reloading: /home/puttputt/projects/falcon/helpers/db_helper.py modified
+[2020-02-13 19:12:16 -0700] [3880] [INFO] Worker exiting (pid: 3880)
+[2020-02-13 19:12:16 -0700] [3890] [INFO] Booting worker with pid: 3890
+[2020-02-13 19:12:20 -0700] [3890] [INFO] Worker reloading: /home/puttputt/projects/falcon/helpers/db_helper.py modified
+[2020-02-13 19:12:20 -0700] [3890] [INFO] Worker exiting (pid: 3890)
+[2020-02-13 19:12:20 -0700] [3896] [INFO] Booting worker with pid: 3896
+[2020-02-13 19:12:21 -0700] [3896] [DEBUG] GET /list_actions
+[2020-02-13 19:12:21 -0700] [3896] [ERROR] Error handling request /list_actions
+Traceback (most recent call last):
+  File "/home/puttputt/.local/lib/python3.6/site-packages/gunicorn/workers/sync.py", line 134, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/home/puttputt/.local/lib/python3.6/site-packages/gunicorn/workers/sync.py", line 175, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "falcon/api.py", line 274, in falcon.api.API.__call__
+  File "falcon/api.py", line 269, in falcon.api.API.__call__
+  File "/home/puttputt/projects/falcon/api/app.py", line 24, in on_get
+    list = db.list_actions()
+  File "/home/puttputt/projects/falcon/helpers/db_helper.py", line 38, in list_actions
+    res = conn.execute("VACUUM")
+sqlite3.OperationalError: cannot VACUUM from within a transaction
+[2020-02-13 19:13:08 -0700] [3896] [INFO] Worker reloading: /home/puttputt/projects/falcon/api/app.py modified
+[2020-02-13 19:13:08 -0700] [3896] [INFO] Worker exiting (pid: 3896)
+[2020-02-13 19:13:08 -0700] [3923] [INFO] Booting worker with pid: 3923
+[2020-02-13 19:13:37 -0700] [3923] [INFO] Worker reloading: /home/puttputt/projects/falcon/api/app.py modified
+[2020-02-13 19:13:37 -0700] [3923] [INFO] Worker exiting (pid: 3923)
+[2020-02-13 19:13:37 -0700] [3935] [INFO] Booting worker with pid: 3935
+[2020-02-13 19:13:51 -0700] [3935] [INFO] Worker reloading: /home/puttputt/projects/falcon/api/app.py modified
+[2020-02-13 19:13:51 -0700] [3935] [INFO] Worker exiting (pid: 3935)
+[2020-02-13 19:13:51 -0700] [3947] [INFO] Booting worker with pid: 3947
+[2020-02-13 19:14:02 -0700] [3947] [INFO] Worker reloading: /home/puttputt/projects/falcon/helpers/db_helper.py modified
+[2020-02-13 19:14:02 -0700] [3947] [INFO] Worker exiting (pid: 3947)
+[2020-02-13 19:14:02 -0700] [3959] [INFO] Booting worker with pid: 3959
+[2020-02-13 19:14:22 -0700] [3959] [INFO] Worker reloading: /home/puttputt/projects/falcon/helpers/db_helper.py modified
+[2020-02-13 19:14:22 -0700] [3959] [INFO] Worker exiting (pid: 3959)
+[2020-02-13 19:14:22 -0700] [3968] [INFO] Booting worker with pid: 3968
+[2020-02-13 19:14:27 -0700] [3968] [INFO] Worker reloading: /home/puttputt/projects/falcon/helpers/db_helper.py modified
+[2020-02-13 19:14:27 -0700] [3968] [INFO] Worker exiting (pid: 3968)
+[2020-02-13 19:14:27 -0700] [3977] [INFO] Booting worker with pid: 3977
+[2020-02-13 19:15:14 -0700] [3977] [DEBUG] GET /list_actions
+[2020-02-13 19:15:36 -0700] [3977] [DEBUG] POST /list_actions
+[2020-02-13 19:15:47 -0700] [3977] [DEBUG] GET /list_actions
+[2020-02-13 19:15:50 -0700] [3977] [DEBUG] POST /save_action
+[2020-02-13 19:15:50 -0700] [3977] [DEBUG] POST /save_action
+[2020-02-13 19:15:52 -0700] [3977] [DEBUG] GET /list_actions
+[2020-02-13 19:15:54 -0700] [3977] [DEBUG] POST /list_actions
+[2020-02-13 19:16:06 -0700] [3977] [INFO] Worker reloading: /home/puttputt/projects/falcon/helpers/db_helper.py modified
+[2020-02-13 19:16:06 -0700] [3977] [INFO] Worker exiting (pid: 3977)
+[2020-02-13 19:16:06 -0700] [4051] [INFO] Booting worker with pid: 4051
+[2020-02-13 19:16:13 -0700] [4051] [DEBUG] GET /list_actions
+[2020-02-13 19:16:25 -0700] [4051] [DEBUG] POST /list_actions
+[2020-02-13 19:16:49 -0700] [4051] [DEBUG] POST /delete_actions
+[2020-02-13 19:16:49 -0700] [4051] [ERROR] Error handling request /delete_actions
+Traceback (most recent call last):
+  File "/home/puttputt/.local/lib/python3.6/site-packages/gunicorn/workers/sync.py", line 134, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/home/puttputt/.local/lib/python3.6/site-packages/gunicorn/workers/sync.py", line 175, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "falcon/api.py", line 274, in falcon.api.API.__call__
+  File "falcon/api.py", line 269, in falcon.api.API.__call__
+  File "/home/puttputt/projects/falcon/api/app.py", line 31, in on_post
+    list = db.delete_actions()
+  File "/home/puttputt/projects/falcon/helpers/db_helper.py", line 46, in delete_actions
+    res = conn.execute("VACUUM")
+sqlite3.OperationalError: cannot VACUUM from within a transaction
+[2020-02-13 19:17:12 -0700] [4051] [INFO] Worker reloading: /home/puttputt/projects/falcon/helpers/db_helper.py modified
+[2020-02-13 19:17:12 -0700] [4051] [INFO] Worker exiting (pid: 4051)
+[2020-02-13 19:17:12 -0700] [4084] [INFO] Booting worker with pid: 4084
+[2020-02-13 19:17:15 -0700] [4084] [DEBUG] POST /delete_actions
+[2020-02-13 19:17:15 -0700] [4084] [ERROR] Error handling request /delete_actions
+Traceback (most recent call last):
+  File "/home/puttputt/.local/lib/python3.6/site-packages/gunicorn/workers/sync.py", line 134, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/home/puttputt/.local/lib/python3.6/site-packages/gunicorn/workers/sync.py", line 175, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "falcon/api.py", line 274, in falcon.api.API.__call__
+  File "falcon/api.py", line 269, in falcon.api.API.__call__
+  File "/home/puttputt/projects/falcon/api/app.py", line 33, in on_post
+    resp.body = json.dumps(list)
+  File "/usr/lib/python3.6/json/__init__.py", line 231, in dumps
+    return _default_encoder.encode(obj)
+  File "/usr/lib/python3.6/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/lib/python3.6/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/usr/lib/python3.6/json/encoder.py", line 180, in default
+    o.__class__.__name__)
+TypeError: Object of type 'Cursor' is not JSON serializable
+[2020-02-13 19:19:15 -0700] [4084] [INFO] Worker reloading: /home/puttputt/projects/falcon/helpers/db_helper.py modified
+[2020-02-13 19:19:15 -0700] [4084] [INFO] Worker exiting (pid: 4084)
+[2020-02-13 19:19:15 -0700] [4177] [INFO] Booting worker with pid: 4177
+[2020-02-13 19:19:27 -0700] [4177] [INFO] Worker reloading: /home/puttputt/projects/falcon/api/app.py modified
+[2020-02-13 19:19:27 -0700] [4177] [INFO] Worker exiting (pid: 4177)
+[2020-02-13 19:19:27 -0700] [4185] [INFO] Booting worker with pid: 4185
+[2020-02-13 19:19:33 -0700] [4185] [INFO] Worker reloading: /home/puttputt/projects/falcon/api/app.py modified
+[2020-02-13 19:19:33 -0700] [4185] [INFO] Worker exiting (pid: 4185)
+[2020-02-13 19:19:33 -0700] [4192] [INFO] Booting worker with pid: 4192
+[2020-02-13 19:19:38 -0700] [4192] [INFO] Worker reloading: /home/puttputt/projects/falcon/helpers/db_helper.py modified
+[2020-02-13 19:19:38 -0700] [4192] [INFO] Worker exiting (pid: 4192)
+[2020-02-13 19:19:38 -0700] [4201] [INFO] Booting worker with pid: 4201
+[2020-02-13 19:19:40 -0700] [4201] [DEBUG] POST /delete_actions
+[2020-02-13 19:19:45 -0700] [4201] [DEBUG] GET /list_actions
+[2020-02-13 19:20:08 -0700] [4201] [DEBUG] POST /save_action
+[2020-02-13 19:20:10 -0700] [4201] [DEBUG] POST /delete_actions
+[2020-02-13 19:20:11 -0700] [4201] [DEBUG] POST /delete_actions
+[2020-02-13 19:20:14 -0700] [4201] [DEBUG] POST /delete_actions
+[2020-02-13 19:20:15 -0700] [4201] [DEBUG] POST /delete_actions
+[2020-02-13 19:20:17 -0700] [4201] [DEBUG] GET /list_actions
+[2020-02-13 19:21:47 -0700] [4201] [INFO] Worker reloading: /home/puttputt/projects/falcon/helpers/db_helper.py modified
+[2020-02-13 19:21:47 -0700] [4201] [INFO] Worker exiting (pid: 4201)
+[2020-02-13 19:21:47 -0700] [4326] [INFO] Booting worker with pid: 4326
+[2020-02-13 19:21:49 -0700] [4326] [DEBUG] POST /delete_actions
+[2020-02-13 19:21:49 -0700] [4326] [ERROR] Error handling request /delete_actions
+Traceback (most recent call last):
+  File "/home/puttputt/.local/lib/python3.6/site-packages/gunicorn/workers/sync.py", line 134, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/home/puttputt/.local/lib/python3.6/site-packages/gunicorn/workers/sync.py", line 175, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "falcon/api.py", line 274, in falcon.api.API.__call__
+  File "falcon/api.py", line 269, in falcon.api.API.__call__
+  File "/home/puttputt/projects/falcon/api/app.py", line 31, in on_post
+    db.delete_actions()
+  File "/home/puttputt/projects/falcon/helpers/db_helper.py", line 46, in delete_actions
+    res.commit()
+AttributeError: 'sqlite3.Cursor' object has no attribute 'commit'
+[2020-02-13 19:21:52 -0700] [4326] [DEBUG] GET /list_actions
+[2020-02-13 19:22:37 -0700] [4326] [INFO] Worker reloading: /home/puttputt/projects/falcon/helpers/db_helper.py modified
+[2020-02-13 19:22:37 -0700] [4326] [INFO] Worker exiting (pid: 4326)
+[2020-02-13 19:22:37 -0700] [4357] [INFO] Booting worker with pid: 4357
+[2020-02-13 19:22:42 -0700] [4357] [DEBUG] POST /delete_actions
+[2020-02-13 19:22:44 -0700] [4357] [DEBUG] GET /list_actions

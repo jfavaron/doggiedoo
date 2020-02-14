@@ -25,6 +25,12 @@ class ListActions:
         print(list)
         resp.body = json.dumps(list)
 
+class DeleteActions:
+    def on_post(self, req, resp):
+        db = DbHelper()
+        db.delete_actions()
+        resp.body = "yay"
+
 class CORSComponent(object):
     def process_response(self, req, resp, resource, req_succeeded):
         resp.set_header('Access-Control-Allow-Origin', '*')
@@ -54,3 +60,4 @@ api = application = falcon.API(middleware=[CORSComponent() ])
 # api.add_route('/agile_central', AgileCentralConnector())
 api.add_route('/save_action', SaveAction())
 api.add_route('/list_actions', ListActions())
+api.add_route('/delete_actions', DeleteActions())
